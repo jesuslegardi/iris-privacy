@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Iris — Privacy Policy</title>
+<meta name="description" content="How the Iris habit application collects, uses, shares and deletes personal data. Available in ten languages.">
+<style>
+  :root{
+    --ground:#0B0910; --surface:#15111C; --text:#EDE9F2; --muted:#A79FB5;
+    --accent:#CF70EA; --rule:#272032; --shadow:rgba(0,0,0,.45);
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --ground:#FBFAFC; --surface:#FFFFFF; --text:#1A1523; --muted:#5A5170;
+      --accent:#8A2BA6; --rule:#E5E1EC; --shadow:rgba(26,21,35,.10);
+    }
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--ground); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",
+      "Noto Sans","Noto Sans JP","Noto Sans KR","Noto Sans SC","Noto Sans TC",Arial,sans-serif;
+    font-size:17px; line-height:1.65; font-synthesis-weight:none;
+  }
+
+  /* ---- header ---- */
+  header{
+    position:sticky; top:0; z-index:10; background:var(--ground);
+    border-bottom:1px solid var(--rule);
+  }
+  @supports (backdrop-filter:blur(12px)){
+    header{background:color-mix(in srgb,var(--ground) 86%,transparent); backdrop-filter:blur(12px)}
+  }
+  .bar{
+    max-width:74ch; margin:0 auto; padding:.7rem 1.25rem;
+    display:flex; align-items:center; gap:1rem; justify-content:space-between;
+  }
+  .mark{
+    font-size:1.0rem; font-weight:650; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--accent); text-decoration:none; white-space:nowrap;
+  }
+  .picker{position:relative; display:flex; align-items:center}
+  .picker::after{
+    content:""; position:absolute; right:.75rem; pointer-events:none;
+    width:.42rem; height:.42rem; border-right:1.5px solid var(--muted);
+    border-bottom:1.5px solid var(--muted); transform:translateY(-.12rem) rotate(45deg);
+  }
+  select{
+    appearance:none; -webkit-appearance:none;
+    background:var(--surface); color:var(--text); border:1px solid var(--rule);
+    border-radius:8px; padding:.42rem 2rem .42rem .7rem;
+    font:inherit; font-size:.92rem; cursor:pointer; max-width:14rem;
+  }
+  select:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+  /* ---- content ---- */
+  main{max-width:74ch; margin:0 auto; padding:2.5rem 1.25rem 5rem}
+  article[data-lang]{display:none}
+  article[data-lang].active{display:block}
+
+  h1{
+    font-size:clamp(1.85rem,5.2vw,2.5rem); line-height:1.18; font-weight:680;
+    letter-spacing:-.018em; margin:0 0 .35rem; text-wrap:balance;
+  }
+  .effective{
+    color:var(--muted); font-size:.94rem; margin:0 0 2.4rem;
+    padding-bottom:1.6rem; border-bottom:1px solid var(--rule);
+  }
+  h2{
+    font-size:1.16rem; font-weight:650; letter-spacing:-.005em; line-height:1.35;
+    margin:2.9rem 0 .85rem; text-wrap:balance;
+  }
+  h2 .n{
+    color:var(--accent); font-variant-numeric:tabular-nums;
+    margin-right:.6rem; font-weight:600;
+  }
+  h3{font-size:1rem; font-weight:650; margin:1.8rem 0 .6rem}
+  p{margin:0 0 1.05rem}
+  ul{margin:0 0 1.15rem; padding-left:1.3rem}
+  li{margin:0 0 .55rem}
+  li::marker{color:var(--muted)}
+  strong{font-weight:650}
+  a{color:var(--accent); text-decoration:underline; text-underline-offset:2px}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.9em; background:var(--surface); padding:.1em .35em; border-radius:4px;
+  }
+
+  /* a paragraph that must not be skimmed past */
+  .note{
+    background:var(--surface); border-left:3px solid var(--accent);
+    border-radius:0 8px 8px 0; padding:1rem 1.15rem; margin:0 0 1.15rem;
+  }
+  .note p:last-child{margin-bottom:0}
+
+  .colophon{
+    margin-top:3.5rem; padding-top:1.6rem; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem; line-height:1.6;
+  }
+  .colophon p{margin:0 0 .5rem}
+  .colophon a{color:var(--muted)}
+
+  noscript .ns{
+    display:block; background:var(--surface); border:1px solid var(--rule);
+    border-radius:8px; padding:.8rem 1rem; margin:0 0 2rem;
+    color:var(--muted); font-size:.9rem;
+  }
+  @media (max-width:520px){
+    body{font-size:16px}
+    .bar{padding:.6rem 1rem}
+    .mark{font-size:.9rem; letter-spacing:.1em}
+    main{padding:2rem 1rem 4rem}
+  }
+  @media print{
+    header{display:none} main{max-width:none}
+    body{background:#fff; color:#000; font-size:11pt}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <span class="mark">Iris</span>
+    <span class="picker">
+      <label for="lang" hidden>Language</label>
+      <select id="lang" aria-label="Language">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="pt">Português</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="zh-Hans">简体中文</option>
+        <option value="zh-Hant">繁體中文</option>
+      </select>
+    </span>
+  </div>
+</header>
+<main>
+<noscript><span class="ns">The language picker needs JavaScript. This page is showing English.</span></noscript>
+<article data-lang="en" class="active">
+<h1>Privacy Policy</h1>
+<p class="effective">Iris for iPhone and Android · In force from 5 September 2026 · This version supersedes all earlier ones</p>
+
+<h2><span class="n">1</span>What this covers</h2>
+<p>This Policy explains what personal data the Iris application collects, why it is collected, who receives it, how long it is kept, and what you can require of us. It applies to Iris for iPhone and Iris for Android, and to the server that supports them. It applies to nothing else.</p>
+<p>“Iris” means the application and its supporting services. “We”, “us” and “our” mean the person identified at the end of this Policy.</p>
+
+<h2><span class="n">2</span>Signing in</h2>
+<p>Iris has no password. You sign in with <strong>Sign in with Apple</strong> or with <strong>Google</strong>, and no other way exists: there is no registration with an email address and a password, and there is no anonymous or guest mode. An account is required to use the application.</p>
+<ul>
+  <li>From <strong>Apple</strong> we receive an identity token, your name and your email address. Apple sends the name and address <strong>only the first time</strong> you authorise Iris. If you chose “Hide My Email”, the address we receive is an Apple relay address and not your own. Sign in with Apple works on Android as well as on iPhone.</li>
+  <li>From <strong>Google</strong> we receive an identity token, your email address and the web address of your Google profile picture.</li>
+</ul>
+<div class="note">
+<p><strong>One consequence to know before you choose.</strong> Signing in with Apple and signing in with Google create <strong>two separate accounts</strong>, even when both carry the same email address. Habits, history and any subscription belong to one of them and cannot be seen from the other, and we are not able to merge them.</p>
+</div>
+
+<h2><span class="n">3</span>What we collect</h2>
+<h3>Your account</h3>
+<p>Your email address and the account identifier issued by Apple or Google. Your email address is held in Firebase Authentication and <strong>is not written into your profile record</strong>; a routine on our server removes it, and several other private fields, from that record on every write.</p>
+<h3>Your profile</h3>
+<p>A username, which you choose; a display name; an optional short biography; an optional profile picture; and the date the account was created. Section 4 explains who can see these.</p>
+<h3>Your habits and your record</h3>
+<p>The names of the habits you track; whether each is one you are building or one you are breaking; the days and times you schedule them for; the priority and colour you give them; any description you write against a habit; and whether you marked each one done or missed. Completed weeks are archived so that your history and your consistency figures survive. Points are calculated by the application from that record — you do not supply them.</p>
+<h3>Your conversations with Iris</h3>
+<p>What you type to her. If you speak to her, what you said <strong>after your own phone has turned it into text</strong> — section 7 explains what happens to the audio itself. Her replies. Any goal she records for you, together with the words you used when you set it.</p>
+<h3>Your device</h3>
+<p>An installation identifier issued by Firebase, which is the address notifications are sent to; the application version and build; your time zone; the language you have chosen in the application; whether you have permitted notifications; the platform; and when the device was last seen. There is one such record for each device you sign in on, and it is deleted when you sign out of that device.</p>
+<h3>Your purchases</h3>
+<p>On iPhone, your account identifier and the purchase receipts Apple issues. See section 9.</p>
+
+<h2><span class="n">4</span>What other people can see</h2>
+<p><strong>Your profile record can be read by any signed-in Iris account.</strong> This is not an oversight — it is what allows another person to find you by username and send you a friend request. That record holds your username, display name, biography, the address of your profile picture, the date you joined, and your visibility settings.</p>
+<p>The application gives you three settings — for your <strong>name</strong>, your <strong>biography</strong> and your <strong>profile picture</strong> — each with the choices <em>Everyone</em>, <em>Friends</em> and <em>No one</em>. Both applications obey all three wherever a person is shown, and our server obeys the name setting when it composes the text of a notification. The picture setting is enforced additionally at the storage layer, so a picture set to <em>No one</em> cannot be retrieved at all. The name and biography settings govern how the applications present those two fields, which sit on the record described above.</p>
+<p><strong>Friends.</strong> Sending a friend request writes your username, display name and picture address into the other person’s account and sends a notification to their device. Your own list of friends can be read by you alone. Blocking someone removes you from each other’s friend list; neither application tells them, though the record of the block is held in their account.</p>
+<div class="note">
+<p><strong>Competitions — please read this.</strong> A competition is optional and you enter one deliberately. When you do, <strong>every other accepted participant can see the names of the habits you entered and your day-by-day record of them — which you completed and which you missed, for each day of the round</strong> — together with your points and how many rounds you have won. If you also choose to share a photograph in a competition, those same participants can see it. Nothing else of yours becomes visible.</p>
+</div>
+<p><strong>Nobody but you</strong> can read your habit lists, your habit descriptions, your weekly history, your goals, your milestones, your settings, your notification records, your friend list, or your conversations with Iris.</p>
+
+<h2><span class="n">5</span>Photographs</h2>
+<p>There are four kinds, and two of them never leave your phone.</p>
+<p><strong>Habit evidence photographs stay on your device.</strong> They are taken with the camera inside the application; there is no way to import one from your photo library, permanently and by design. The image is written to the application’s own private storage on the phone. What reaches our database is a <strong>local reference</strong> — a short piece of text, not an image — so that your other device knows a photograph exists for that day. <strong>We never receive the image.</strong></p>
+<p><strong>Milestone photographs stay on your device</strong> in the same way. These you may choose from your photo library.</p>
+<p><strong>Your profile picture is uploaded</strong> to our storage, and is served to other people according to the setting described in section 4.</p>
+<p><strong>Competition photographs are uploaded.</strong> A separate, smaller copy is made for the purpose; the full-quality original stays on your phone. The copy can be seen by the accepted participants of that competition, it is deleted when the round is decided, and it is in no case kept for longer than eight days.</p>
+<p><strong>After every photograph</strong> the application asks whether to keep it in Iris only, or in Iris and your phone’s gallery. If you choose the gallery, a copy is placed in your own camera roll, outside the application, where any photo synchronisation you use will treat it like any other picture.</p>
+<p><strong>Backups differ between the platforms, and you should know which applies to you.</strong> On iPhone, photographs held by Iris are included in your iCloud device backup. On Android they are <strong>excluded from cloud backup</strong> and are carried only in a direct phone-to-phone transfer on Android 12 and later; on earlier versions of Android they are not carried at all.</p>
+
+<h2><span class="n">6</span>Iris, and what reaches the companies that run the models</h2>
+<p>Iris is an artificial-intelligence coach. Her replies are generated by large language models operated by the companies named in section 8. They are not written by a person and no person reads them before you do.</p>
+<p><strong>For each message, our server assembles and sends:</strong> your display name; the conversation so far in the current session; a calculated summary of your tracking — habit names, which list each belongs to, priority, the days they are scheduled for, how many you have completed, missed and still have to do this week, your consistency across the last several recorded weeks, your streaks, your fuel level and your local date; your goals, in the words you used; and <strong>one</strong> habit description, and only when your message names exactly one habit unambiguously.</p>
+<p><strong>We do not send</strong> your email address, your photographs, any file, or any other person’s data.</p>
+<p><strong>Before any of it leaves our server</strong>, a fixed check reads your message in all ten languages. A message it matches is <strong>not forwarded to any company and is not recorded in your conversation</strong>; you receive a reply about getting help from a person instead.</p>
+<div class="note">
+<p><strong>Iris is not a medical, psychological or crisis service.</strong> She does not diagnose, treat or advise on any health condition. If you are in danger, contact your local emergency number or a crisis line.</p>
+</div>
+
+<h2><span class="n">7</span>Voice, and the difference between the two platforms</h2>
+<p>When you speak to Iris, <strong>your phone</strong> turns your speech into text, and only that text is sent to us. The audio is never written to a file by the application, never uploaded by the application, and never kept. A single utterance is limited to sixty seconds.</p>
+<p><strong>On iPhone, transcription is performed on the device, always.</strong> There is no cloud fallback: where on-device transcription is not available for a language, the feature reports itself unavailable rather than sending your audio anywhere.</p>
+<p><strong>On Android, transcription is performed on the device when your phone is able to do it</strong>, which requires Android 13 or later and an installed model for the language. <strong>Where it cannot, your phone’s own speech service performs the transcription, and your audio is sent to that service</strong> — in practice Google’s, though it is whichever service your phone is configured to use. That transfer is governed by that service’s terms and not by this Policy. The application tells you which of the two is in use when you open voice mode, and it can change during a session if no model exists for a language you switch to.</p>
+<p><strong>Iris’s spoken voice</strong> is produced by Google Cloud Text-to-Speech from the text of <strong>her own reply</strong>, which our server reads from its own copy of the conversation. Your words are not sent to that service. The resulting audio is cached by us, addressed by a fingerprint of the text rather than by any person, and deleted after thirty days.</p>
+
+<h2><span class="n">8</span>Who receives your data</h2>
+<p>Six companies. Each acts on our instructions, for the purpose named.</p>
+<h3>Google LLC</h3>
+<p>The largest recipient, in several distinct roles: Firebase Authentication, which holds your sign-in and your email address; Cloud Firestore, the database holding everything in section 3 except your email address; Cloud Storage, holding your profile picture, competition photographs and the cached speech audio; Cloud Functions in the United States, which is our server; Firebase Cloud Messaging, which delivers notifications; Firebase App Check and Firebase Installations, for device attestation and the installation identifier; Google Sign-In, if you use it; the Gemini API, which receives your <strong>spoken</strong> conversation as described in section 6; Google Cloud Text-to-Speech, which receives Iris’s replies only; and, on Android, Google Play services for purchase infrastructure, integrity attestation and the review prompt. If you signed in with Google and have not replaced your picture, other people’s phones fetch that picture from Google’s servers directly.</p>
+<h3>OpenAI, L.L.C.</h3>
+<p>Your <strong>typed</strong> conversation and the summary described in section 6. OpenAI is the primary provider for most of what you type.</p>
+<h3>Anthropic PBC</h3>
+<p>The same material as OpenAI, for the parts of the conversation it handles and whenever OpenAI is unavailable. Separately, a list of your <strong>habit names alone</strong> is sent to Anthropic in order to sort habits into categories.</p>
+<h3>Apple Inc.</h3>
+<p>Sign in with Apple, <strong>on Android as well as on iPhone</strong>; the Apple Push Notification service, which is the last step of every notification delivered to an iPhone; App Attest, for device attestation; and the App Store, for purchases.</p>
+<h3>RevenueCat, Inc.</h3>
+<p>On iPhone only, and only for subscriptions: your account identifier, your purchase and receipt history, the device information its software collects, and the Apple advertising-attribution token. On Android this component is present in the application but inactive, and receives nothing.</p>
+<h3>GitHub, Inc.</h3>
+<p>Hosts the page you are reading. It therefore sees your IP address and browser details when you open it, as any web host would. It receives nothing else and has no access to your Iris account.</p>
+<h3>Transfer out of your country</h3>
+<p>All processing takes place in the United States. Where you are in the European Economic Area or the United Kingdom, these transfers are made under the data processing agreements we hold with each company above, which incorporate the European Commission’s Standard Contractual Clauses.</p>
+
+<h2><span class="n">9</span>Purchases</h2>
+<p>Apple or Google always takes the payment, and we never see a card number. Every limit in Iris is presently switched off and every feature is available at no charge, so no purchase can currently be made. On iPhone, subscription state is recorded by RevenueCat as described in section 8.</p>
+
+<h2><span class="n">10</span>What the models are trained on</h2>
+<p>We have not permitted any of the companies in section 8 to train models on what you send to Iris, and each of them states that it does not:</p>
+<ul>
+  <li><strong>OpenAI</strong> does not use data submitted through its API to train its models, and keeps abuse-monitoring logs for up to thirty days.</li>
+  <li><strong>Anthropic</strong> does not use commercial API inputs or outputs to train its models by default, and states that it deletes them from its systems within thirty days by default.</li>
+  <li><strong>Google’s Gemini API</strong>, on the paid service we use, does not use prompts or responses to improve Google’s products; Google logs them for a limited period only, in order to detect breaches of its prohibited-use policy and to meet legal obligations.</li>
+  <li><strong>Google Cloud Text-to-Speech</strong> runs under the Google Cloud terms, which are separate from the above, and under which customer data is not used to train Google’s models.</li>
+</ul>
+<p>These are the providers’ own commitments under the paid business terms on which we hold our accounts. They are not guarantees we are in a position to give on another company’s behalf; each provider’s current terms govern. If that position changes, this section changes with it.</p>
+
+<h2><span class="n">11</span>What we never do</h2>
+<p>We do not advertise in Iris and we sell no advertising space. Iris contains <strong>no analytics software, no crash-reporting software, and no advertising software</strong> of any kind, apart from the single Apple attribution token named in section 8. We do not track you across other applications or websites. <strong>We do not sell your personal information and we do not share it for cross-context behavioural advertising</strong>, under any definition of those words, including California’s. We do not profile you for any other party’s benefit, and we neither build nor sell audience segments.</p>
+
+<h2><span class="n">12</span>Why we are allowed to process it</h2>
+<p>For readers in the European Economic Area and the United Kingdom, our legal bases are these. We rely on <strong>performance of a contract</strong> for everything needed to provide the application: your account, your habits, your history, and Iris’s replies to you. We rely on your <strong>consent</strong>, given in your device’s own permission prompts and withdrawable there at any moment, for the camera, the microphone, notifications and access to your photo library. We rely on our <strong>legitimate interests</strong> in keeping the service secure and preventing abuse.</p>
+<div class="note">
+<p><strong>A habit can reveal something about your health.</strong> A habit such as <em>take my medication</em>, <em>go to the gym</em> or <em>no alcohol today</em> says something about you, and so may what you write to Iris. Where you enter such a habit or write such a message you do so voluntarily, and by doing so you give your <strong>explicit consent</strong> to its being processed as this Policy describes — Article 9(2)(a) of the GDPR. Nothing in Iris asks you for anything about your health, we require none of it, and you may delete any habit, any goal, or the whole account at any time.</p>
+</div>
+
+<h2><span class="n">13</span>How long we keep it</h2>
+<p>Your profile, habits, weekly history, goals, milestones and archived conversations are kept <strong>until you delete your account</strong>. There is no automatic expiry, and the application does not let you read archived conversations back.</p>
+<p>Two things expire on their own: <strong>competition photographs</strong> are deleted when the round is decided and in no case kept beyond <strong>eight days</strong>; the <strong>cached speech audio</strong> described in section 7 is deleted after <strong>thirty days</strong>. The record of a device is deleted when you sign out of it.</p>
+
+<h2><span class="n">14</span>Deleting your account</h2>
+<p>Open the menu, then your profile, then Delete account, in either application. It takes effect at once and it cannot be undone. On an Apple account we first ask you to sign in again, so that we can also revoke Iris’s Apple token.</p>
+<p><strong>What is deleted:</strong> your profile and every record beneath it — habits, weekly history, goals, milestones, settings, friend rows, blocks, invitations, device records, and <strong>every archived conversation with Iris</strong>; the copies of your name and picture held in your friends’ accounts and in competition rosters; your competition score records and any photograph you shared; your uploaded profile picture; your sign-in account itself; and <strong>every Iris photograph on the phone you are holding</strong>, since those were only ever there.</p>
+<p><strong>What survives, and why:</strong></p>
+<ul>
+  <li>A competition you did not create <strong>continues for the remaining players</strong>, with you removed from the roster. Rounds already decided are not rewritten, so a past result may still record that you won it.</li>
+  <li>Any copy you chose to save to your own camera roll. It is yours, and it is on your phone.</li>
+  <li>Any device backup already taken.</li>
+  <li>RevenueCat’s record of your purchases, which we cannot delete on your behalf. Write to us and we will pass the request on.</li>
+  <li>The cached speech audio of section 7, which is addressed by the text and not by any person, and which expires within thirty days.</li>
+  <li>Server log entries recording that requests happened. They contain the account identifier and no message content, and are kept under Google’s retention.</li>
+</ul>
+<p>Photographs on a <strong>second</strong> device are removed from our records but stay on that device until you sign out on it or delete the application.</p>
+
+<h2><span class="n">15</span>Your rights</h2>
+<p>Whoever you are and wherever you live, you may ask us to give you a copy of your data, to correct it, to delete it, to hand it over in a portable form, to stop a particular use of it, or to withdraw a permission you gave. Write to <a href="mailto:jesuslegardip@gmail.com">jesuslegardip@gmail.com</a>. <strong>We answer within ten working days</strong>, and in every case within any shorter period the law where you live requires. We charge nothing and we do not ask you for a reason.</p>
+<h3>Peru</h3>
+<p>Iris is operated from Peru and Peruvian law applies: <strong>Ley N.° 29733, Ley de Protección de Datos Personales</strong>, and its Reglamento, <strong>Decreto Supremo N.° 016-2024-JUS</strong>, in force since 30 March 2025. You hold the <em>derechos de acceso, rectificación, cancelación y oposición</em> and the <em>derecho de portabilidad</em>. If we do not resolve your request you may complain to the <strong>Autoridad Nacional de Protección de Datos Personales</strong>, part of the Ministerio de Justicia y Derechos Humanos — <a href="https://www.gob.pe/anpd">gob.pe/anpd</a>, <a href="mailto:protegetusdatos@minjus.gob.pe">protegetusdatos@minjus.gob.pe</a>, or Calle Scipión Llona N.° 350, Miraflores, Lima.</p>
+<h3>European Economic Area and United Kingdom</h3>
+<p>You hold the rights in Articles 15 to 22 of the GDPR — access, rectification, erasure, restriction of processing, portability and objection — and the right to withdraw consent at any time. We answer within one month, as Article 12(3) requires. You may complain to your national supervisory authority, or in the United Kingdom to the Information Commissioner’s Office, and you need not contact us first.</p>
+<h3>California</h3>
+<p>We are not a “business” as the California Consumer Privacy Act defines one, being far below every threshold it sets. We give every request the rights set out above regardless, and we confirm what section 11 states: we do not sell or share personal information.</p>
+
+<h2><span class="n">16</span>Children</h2>
+<p>Iris is not directed at children and is not designed for them. You must be at least <strong>13</strong> years old to hold an account. In the European Economic Area and the United Kingdom, where the age at which a child may consent for themselves is between 13 and 16 depending on the country, a user below that age needs the authorisation of a parent or guardian. We do not knowingly collect data from a child below these ages; if you believe we have, write to us and we will delete the account and everything in it.</p>
+
+<h2><span class="n">17</span>Security, and changes to this Policy</h2>
+<p>Traffic is encrypted in transit, and data is stored on Google Cloud infrastructure under Google’s security controls. Access to your records is enforced by rules on our server and not by the application alone. No system is perfect and we do not claim otherwise.</p>
+<p>If a breach of security affects your personal data, we will notify the competent authority and, where the law requires it, you — within 48 hours of becoming aware, as the Peruvian Reglamento requires, and within 72 hours where Article 33 of the GDPR applies.</p>
+<p>If we change this Policy we will change the date at the head of this page and, where a change is material, tell you in the application before it takes effect.</p>
+
+<div class="colophon">
+<p>Responsible for the processing described here: Jesus Pastor Legardi, an individual, Peru. Contact for every matter in this Policy, including every request under section 15: <a href="mailto:jesuslegardip@gmail.com">jesuslegardip@gmail.com</a>.</p>
+<p>This page loads no fonts, images, scripts or trackers from anywhere. Nothing about your visit is recorded by us.</p>
+</div>
+</article>
+</main>
+<script>
+(function () {
+  "use strict";
+
+  var select = document.getElementById("lang");
+  var articles = document.querySelectorAll("article[data-lang]");
+
+  // The ten tags the app itself uses, and every reasonable spelling of each.
+  // Chinese is the case that matters: a browser reports zh-CN or zh-TW, never
+  // zh-Hans, so a naive first-subtag match would send every Chinese reader to
+  // English.
+  var CANON = {};
+  ["en","es","pt","fr","de","it","ja","ko"].forEach(function (t) { CANON[t] = t; });
+  ["zh-hans","zh_hans","zh","zh-cn","zh-sg","zh-my","zh-chs","chs"].forEach(function (t) {
+    CANON[t] = "zh-Hans";
+  });
+  ["zh-hant","zh_hant","zh-tw","zh-hk","zh-mo","zh-cht","cht"].forEach(function (t) {
+    CANON[t] = "zh-Hant";
+  });
+
+  function canonical(raw) {
+    if (!raw) return null;
+    var tag = String(raw).trim().toLowerCase().replace(/_/g, "-");
+    if (CANON[tag]) return CANON[tag];
+    var base = tag.split("-")[0];          // pt-BR -> pt, en-GB -> en
+    return CANON[base] || null;
+  }
+
+  function requested() {
+    var q = null;
+    try { q = new URLSearchParams(location.search).get("lang"); } catch (e) {}
+    if (!q && location.search) {           // URLSearchParams missing: parse by hand
+      var m = location.search.match(/[?&]lang=([^&]+)/);
+      if (m) q = decodeURIComponent(m[1]);
+    }
+    return canonical(q) || canonical(location.hash.replace(/^#/, "")) || null;
+  }
+
+  function fromBrowser() {
+    var list = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < list.length; i++) {
+      var hit = canonical(list[i]);
+      if (hit) return hit;
+    }
+    return "en";
+  }
+
+  function show(tag) {
+    var found = false;
+    for (var i = 0; i < articles.length; i++) {
+      var on = articles[i].getAttribute("data-lang") === tag;
+      articles[i].classList.toggle("active", on);
+      if (on) found = true;
+    }
+    if (!found) return show("en");         // a language we do not have yet
+    document.documentElement.lang = tag;
+    if (select) select.value = tag;
+    var h1 = document.querySelector("article[data-lang].active h1");
+    if (h1) document.title = "Iris — " + h1.textContent.trim();
+    return tag;
+  }
+
+  show(requested() || fromBrowser());
+
+  if (select) {
+    select.addEventListener("change", function () {
+      var tag = show(select.value);
+      if (history.replaceState) {
+        history.replaceState(null, "", "?lang=" + encodeURIComponent(tag));
+      }
+      window.scrollTo(0, 0);
+    });
+  }
+
+  window.addEventListener("popstate", function () {
+    show(requested() || fromBrowser());
+  });
+})();
+</script>
+</body>
+</html>
