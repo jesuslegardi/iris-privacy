@@ -1,24 +1,26 @@
-<article data-lang="en" class="active">
+<article lang="en" data-lang="en" class="active">
 <h1>Privacy Policy</h1>
-<p class="effective">Iris for iPhone and Android · In force from 5 September 2026 · This version supersedes all earlier ones</p>
+<p class="effective">Iris · 1 October 2026</p>
 
 <h2><span class="n">1</span>What this covers</h2>
 <p>This Policy explains what personal data the Iris application collects, why it is collected, who receives it, how long it is kept, and what you can require of us. It applies to Iris for iPhone and Iris for Android, and to the server that supports them. It applies to nothing else.</p>
 <p>“Iris” means the application and its supporting services. “We”, “us” and “our” mean the person identified at the end of this Policy.</p>
 
 <h2><span class="n">2</span>Signing in</h2>
-<p>Iris has no password. You sign in with <strong>Sign in with Apple</strong> or with <strong>Google</strong>, and no other way exists: there is no registration with an email address and a password, and there is no anonymous or guest mode. An account is required to use the application.</p>
+
+<p>You can start Iris as a guest without supplying an email address. Firebase creates an anonymous account identifier so your setup, habits, goals and optional coaching belong to you. Guest does not mean that data stays offline. You can continue with the free tracker. Saving your account with Apple or Google is optional.</p>
 <ul>
   <li>From <strong>Apple</strong> we receive an identity token, your name and your email address. Apple sends the name and address <strong>only the first time</strong> you authorise Iris. If you chose “Hide My Email”, the address we receive is an Apple relay address and not your own. Sign in with Apple works on Android as well as on iPhone.</li>
   <li>From <strong>Google</strong> we receive an identity token, your email address and the web address of your Google profile picture.</li>
 </ul>
 <div class="note">
-<p><strong>One consequence to know before you choose.</strong> Signing in with Apple and signing in with Google create <strong>two separate accounts</strong>, even when both carry the same email address. Habits, history and any subscription belong to one of them and cannot be seen from the other, and we are not able to merge them.</p>
+<p>Saving a guest account with an unused Apple or Google sign-in links that sign-in to the same Iris identifier and keeps your guest data. If that sign-in already belongs to an Iris account, Iris opens that existing account; it does not merge the two accounts or their private data. Use your original sign-in method to recover an existing account. Without a saved sign-in, access to guest data can be lost if the app or its credentials are removed.</p>
 </div>
 
 <h2><span class="n">3</span>What we collect</h2>
+
 <h3>Your account</h3>
-<p>Your email address and the account identifier issued by Apple or Google. Your email address is held in Firebase Authentication and <strong>is not written into your profile record</strong>; a routine on our server removes it, and several other private fields, from that record on every write.</p>
+<p>A Firebase account identifier, including for guests; and, when you save an account, the sign-in identifier and email address supplied by Apple or Google. The email is held in Firebase Authentication and is not part of your public profile.</p>
 <h3>Your profile</h3>
 <p>A username, which you choose; a display name; an optional short biography; an optional profile picture; and the date the account was created. Section 4 explains who can see these.</p>
 <h3>Your habits and your record</h3>
@@ -28,7 +30,9 @@
 <h3>Your device</h3>
 <p>An installation identifier issued by Firebase, which is the address notifications are sent to; the application version and build; your time zone; the language you have chosen in the application; whether you have permitted notifications; the platform; and when the device was last seen. There is one such record for each device you sign in on, and it is deleted when you sign out of that device.</p>
 <h3>Your purchases</h3>
-<p>On iPhone, your account identifier and the purchase receipts Apple issues. See section 9.</p>
+<p>Your Iris account identifier, store product and transaction identifiers, receipt or purchase-token information, purchase history and subscription status. Apple or Google processes payment; Iris never receives your card number.</p>
+
+<p>Iris does not sell personal data, show ads, or track you across other apps and websites. We record limited onboarding diagnostics under your account: steps such as starting, choosing a habit or goal, viewing an offer, continuing free, purchasing or saving an account, with timestamps and whether the account is a guest. These records contain no chat text and are removed with the account. RevenueCat subscription information and server security logs are separate. There is no third-party advertising or crash-reporting SDK. We keep at most 200 of these onboarding event records per account.</p>
 
 <h2><span class="n">4</span>What other people can see</h2>
 <p><strong>Your profile record can be read by any signed-in Iris account.</strong> This is not an oversight — it is what allows another person to find you by username and send you a friend request. That record holds your username, display name, biography, the address of your profile picture, the date you joined, and your visibility settings.</p>
@@ -37,9 +41,10 @@
 <div class="note">
 <p><strong>Competitions — please read this.</strong> A competition is optional and you enter one deliberately. When you do, <strong>every other accepted participant can see the names of the habits you entered and your day-by-day record of them — which you completed and which you missed, for each day of the round</strong> — together with your points and how many rounds you have won. If you also choose to share a photograph in a competition, those same participants can see it. Nothing else of yours becomes visible.</p>
 </div>
-<p><strong>Nobody but you</strong> can read your habit lists, your habit descriptions, your weekly history, your goals, your milestones, your settings, your notification records, your friend list, or your conversations with Iris.</p>
+<p>Other Iris users cannot read your habit lists, habit descriptions, weekly history, goals, milestones, settings, notification records, friend list or conversations with Iris, apart from the competition information you choose to share as explained above. If you report selected content to us, the developer can read that content to review the report.</p>
 
 <h2><span class="n">5</span>Photographs</h2>
+<p><strong>Habit tracking and unlimited full-quality local habit photographs are free. Taking a photograph does not subscribe you to coaching. Only a copy you explicitly share in a competition is uploaded for the other participants.</strong></p>
 <p>There are four kinds, and two of them never leave your phone.</p>
 <p><strong>Habit evidence photographs stay on your device.</strong> They are taken with the camera inside the application; there is no way to import one from your photo library, permanently and by design. The image is written to the application’s own private storage on the phone. What reaches our database is a <strong>local reference</strong> — a short piece of text, not an image — so that your other device knows a photograph exists for that day. <strong>We never receive the image.</strong></p>
 <p><strong>Milestone photographs stay on your device</strong> in the same way. These you may choose from your photo library.</p>
@@ -64,6 +69,7 @@
 <p><strong>Iris’s spoken voice</strong> is produced by Google Cloud Text-to-Speech from the text of <strong>her own reply</strong>, which our server reads from its own copy of the conversation. Your words are not sent to that service. The resulting audio is cached by us, addressed by a fingerprint of the text rather than by any person, and deleted after thirty days.</p>
 
 <h2><span class="n">8</span>Who receives your data</h2>
+
 <p>Six companies. Each acts on our instructions, for the purpose named.</p>
 <h3>Google LLC</h3>
 <p>The largest recipient, in several distinct roles: Firebase Authentication, which holds your sign-in and your email address; Cloud Firestore, the database holding everything in section 3 except your email address; Cloud Storage, holding your profile picture, competition photographs and the cached speech audio; Cloud Functions in the United States, which is our server; Firebase Cloud Messaging, which delivers notifications; Firebase App Check and Firebase Installations, for device attestation and the installation identifier; Google Sign-In, if you use it; the Gemini API, which receives your <strong>spoken</strong> conversation as described in section 6; Google Cloud Text-to-Speech, which receives Iris’s replies only; and, on Android, Google Play services for purchase infrastructure, integrity attestation and the review prompt. If you signed in with Google and have not replaced your picture, other people’s phones fetch that picture from Google’s servers directly.</p>
@@ -74,14 +80,15 @@
 <h3>Apple Inc.</h3>
 <p>Sign in with Apple, <strong>on Android as well as on iPhone</strong>; the Apple Push Notification service, which is the last step of every notification delivered to an iPhone; App Attest, for device attestation; and the App Store, for purchases.</p>
 <h3>RevenueCat, Inc.</h3>
-<p>On iPhone only, and only for subscriptions: your account identifier, your purchase and receipt history, the device information its software collects, and the Apple advertising-attribution token. On Android this component is present in the application but inactive, and receives nothing.</p>
+<p>On iPhone and on Android builds configured for subscriptions, RevenueCat processes your Iris account identifier, purchase and receipt history, subscription status and device information from its software. This includes guest identifiers, so a purchase can be attached before optional registration. On iPhone its software also collects Apple’s advertising-attribution token. Billing availability depends on the installed build and store configuration; an unavailable offer does not mean that all subscription processing is inactive.</p>
 <h3>GitHub, Inc.</h3>
 <p>Hosts the page you are reading. It therefore sees your IP address and browser details when you open it, as any web host would. It receives nothing else and has no access to your Iris account.</p>
 <h3>Transfer out of your country</h3>
 <p>All processing takes place in the United States. Where you are in the European Economic Area or the United Kingdom, these transfers are made under the data processing agreements we hold with each company above, which incorporate the European Commission’s Standard Contractual Clauses.</p>
 
 <h2><span class="n">9</span>Purchases</h2>
-<p>Apple or Google always takes the payment, and we never see a card number. Every limit in Iris is presently switched off and every feature is available at no charge, so no purchase can currently be made. On iPhone, subscription state is recorded by RevenueCat as described in section 8.</p>
+<p>The tracker and full-quality local habit photographs are free. Ongoing Iris coaching is an optional subscription where offered. Your installed app and the native App Store or Google Play purchase sheet show the available monthly or annual plan, localized price, billing period, renewal conditions and any trial. A seven-day trial is available only when the store says you are eligible; do not assume a previous subscriber qualifies. The store’s displayed terms apply before you confirm. A purchase is not required to continue tracking.</p>
+<p>Payment is handled by Apple or Google. To restore, use Restore purchases in Iris with the store account that bought the subscription and the correct Iris account. If verification is pending or access is missing, contact support before buying again. Manage or cancel the subscription with the store that billed you. Deleting Iris, deleting an Iris account, or withdrawing AI permission does not cancel a store subscription. Cancel before the trial or renewal deadline shown by that store to avoid the next charge.</p>
 
 <h2><span class="n">10</span>What the models are trained on</h2>
 <p>We have not permitted any of the companies in section 8 to train models on what you send to Iris, and each of them states that it does not:</p>
@@ -94,31 +101,27 @@
 <p>These are the providers’ own commitments under the paid business terms on which we hold our accounts. They are not guarantees we are in a position to give on another company’s behalf; each provider’s current terms govern. If that position changes, this section changes with it.</p>
 
 <h2><span class="n">11</span>What we never do</h2>
-<p>We do not advertise in Iris and we sell no advertising space. Iris contains <strong>no analytics software, no crash-reporting software, and no advertising software</strong> of any kind, apart from the single Apple attribution token named in section 8. We do not track you across other applications or websites. <strong>We do not sell your personal information and we do not share it for cross-context behavioural advertising</strong>, under any definition of those words, including California’s. We do not profile you for any other party’s benefit, and we neither build nor sell audience segments.</p>
+<p>Iris does not sell personal data, show ads, or track you across other apps and websites. We record limited onboarding diagnostics under your account: steps such as starting, choosing a habit or goal, viewing an offer, continuing free, purchasing or saving an account, with timestamps and whether the account is a guest. These records contain no chat text and are removed with the account. RevenueCat subscription information and server security logs are separate. There is no third-party advertising or crash-reporting SDK. We keep at most 200 of these onboarding event records per account.</p>
 
 <h2><span class="n">12</span>Why we are allowed to process it</h2>
+
 <p>For readers in the European Economic Area and the United Kingdom, our legal bases are these. We rely on <strong>performance of a contract</strong> for everything needed to provide the application: your account, your habits, your history, and Iris’s replies to you. We rely on your <strong>consent</strong>, given in your device’s own permission prompts and withdrawable there at any moment, for the camera, the microphone, notifications and access to your photo library. We rely on our <strong>legitimate interests</strong> in keeping the service secure and preventing abuse.</p>
-<div class="note">
-<p><strong>A habit can reveal something about your health.</strong> A habit such as <em>take my medication</em>, <em>go to the gym</em> or <em>no alcohol today</em> says something about you, and so may what you write to Iris. Where you enter such a habit or write such a message you do so voluntarily, and by doing so you give your <strong>explicit consent</strong> to its being processed as this Policy describes — Article 9(2)(a) of the GDPR. Nothing in Iris asks you for anything about your health, we require none of it, and you may delete any habit, any goal, or the whole account at any time.</p>
-</div>
+<div class="note"><p>Habit names, goals and messages may reveal sensitive information, including health information. Iris does not require this information and is not a health service. Avoid entering information you do not want processed as described here. You can delete a habit or goal, request removal of a conversation, or delete your account. Merely reading this policy is not permission for an additional use of your data.</p></div>
 
 <h2><span class="n">13</span>How long we keep it</h2>
 <p>Your profile, habits, weekly history, goals, milestones and archived conversations are kept <strong>until you delete your account</strong>. There is no automatic expiry, and the application does not let you read archived conversations back.</p>
 <p>Two things expire on their own: <strong>competition photographs</strong> are deleted when the round is decided and in no case kept beyond <strong>eight days</strong>; the <strong>cached speech audio</strong> described in section 7 is deleted after <strong>thirty days</strong>. The record of a device is deleted when you sign out of it.</p>
 
+<p data-report-retention="conditional">Where in-app reporting is available, a report contains your account identifier, the selected content, its reference, your reason and any note you choose to send. Only the developer and authorised moderators can read the private report. Selected reported content and moderation records are retained for up to 90 days, unless applicable law requires otherwise. Backups used to restore hidden content expire after 90 days. Account deletion removes reports and backups tied to your account under the account-deletion policy.</p>
+
 <h2><span class="n">14</span>Deleting your account</h2>
-<p>Open the menu, then your profile, then Delete account, in either application. It takes effect at once and it cannot be undone. On an Apple account we first ask you to sign in again, so that we can also revoke Iris’s Apple token.</p>
-<p><strong>What is deleted:</strong> your profile and every record beneath it — habits, weekly history, goals, milestones, settings, friend rows, blocks, invitations, device records, and <strong>every archived conversation with Iris</strong>; the copies of your name and picture held in your friends’ accounts and in competition rosters; your competition score records and any photograph you shared; your uploaded profile picture; your sign-in account itself; and <strong>every Iris photograph on the phone you are holding</strong>, since those were only ever there.</p>
-<p><strong>What survives, and why:</strong></p>
-<ul>
-  <li>A competition you did not create <strong>continues for the remaining players</strong>, with you removed from the roster. Rounds already decided are not rewritten, so a past result may still record that you won it.</li>
-  <li>Any copy you chose to save to your own camera roll. It is yours, and it is on your phone.</li>
-  <li>Any device backup already taken.</li>
-  <li>RevenueCat’s record of your purchases, which we cannot delete on your behalf. Write to us and we will pass the request on.</li>
-  <li>The cached speech audio of section 7, which is addressed by the text and not by any person, and which expires within thirty days.</li>
-  <li>Server log entries recording that requests happened. They contain the account identifier and no message content, and are kept under Google’s retention.</li>
-</ul>
-<p>Photographs on a <strong>second</strong> device are removed from our records but stay on that device until you sign out on it or delete the application.</p>
+<p>In the app, open the menu, your profile and Delete account. You may need to sign in again to confirm ownership or revoke Apple access. Deletion is permanent once completed. If the operation reports a failure, contact us so we can check the remaining cleanup.</p>
+<p>You can request deletion even if you have uninstalled Iris or cannot open it. Email <a href="mailto:iris26app@gmail.com?subject=Delete%20my%20Iris%20account">iris26app@gmail.com</a> with the subject “Delete my Iris account”. Include your Iris username or the sign-in email and whether you used Apple or Google. If you used Hide My Email, include the Apple relay address if known. For a guest, include the account identifier if you have it; tell us if you do not. You do not need to reinstall the app to make a request.</p>
+<p>We verify ownership before deleting anyone’s data, normally by replying to the address associated with the account. We never ask for your password, verification codes, payment-card details or a payment. If a guest account has no recoverable identifier or linked sign-in, we may be unable to identify it safely; we will explain what can be verified. We respond within ten working days and explain the verification and completion steps.</p>
+<p>Deletion removes the sign-in identity, profile, habits, history, goals, milestones, conversations, settings, device records, onboarding diagnostics, queued coaching jobs, social connections, uploaded avatar, competition scores and shared photographs associated with the account. Competitions created by you are removed; other competitions can continue without you. In-app deletion also clears Iris photographs on that device. An email request cannot remotely erase files on an offline device.</p>
+<p>Some information is outside that deletion: copies in your gallery or device backups; files on another device until that device clears them; already-decided competition results; text-addressed speech caches that expire after 30 days; and security logs under the hosting provider’s retention. Store transaction records follow Apple’s or Google’s retention. RevenueCat records are handled separately: ask us to coordinate the deletion request. Support correspondence is kept as needed to resolve and document the request, and applicable legal retention may still apply. Competition photo copies expire when the round is decided, with an eight-day storage expiry backstop.</p>
+<p>Account deletion and subscription cancellation are separate. Cancel an active subscription with <a href="https://support.apple.com/en-us/118428">Apple</a> or <a href="https://support.google.com/googleplay/answer/7018481">Google Play</a>; uninstalling or deleting your account does not stop renewal. You may request account deletion without reinstalling or buying anything.</p>
+<p><a href="https://jesuslegardi.github.io/iris-support/?lang=en#delete-account">Delete your Iris account and data</a></p>
 
 <h2><span class="n">15</span>Your rights</h2>
 <p>Whoever you are and wherever you live, you may ask us to give you a copy of your data, to correct it, to delete it, to hand it over in a portable form, to stop a particular use of it, or to withdraw a permission you gave. Write to <a href="mailto:iris26app@gmail.com">iris26app@gmail.com</a>. <strong>We answer within ten working days</strong>, and in every case within any shorter period the law where you live requires. We charge nothing and we do not ask you for a reason.</p>

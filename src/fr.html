@@ -1,24 +1,26 @@
-<article data-lang="fr">
+<article lang="fr" data-lang="fr">
 <h1>Politique de confidentialité</h1>
-<p class="effective">Iris pour iPhone et Android · En vigueur depuis le 5 septembre 2026 · Cette version remplace toutes les précédentes</p>
+<p class="effective">Iris · 1 octobre 2026</p>
 
 <h2><span class="n">1</span>Objet</h2>
 <p>La présente Politique expose quelles données personnelles l'application Iris collecte, à quelle fin, qui les reçoit, combien de temps elles sont conservées et ce que vous pouvez exiger de nous. Elle s'applique à Iris pour iPhone et à Iris pour Android, ainsi qu'au serveur qui les soutient. Elle ne s'applique à rien d'autre.</p>
 <p>« Iris » désigne l'application et les services qui la soutiennent. « Nous » et « notre » désignent la personne identifiée à la fin de la présente Politique.</p>
 
 <h2><span class="n">2</span>La connexion</h2>
-<p>Iris n'a pas de mot de passe. Vous vous connectez avec <strong>Se connecter avec Apple</strong> ou avec <strong>Google</strong>, et il n'existe aucune autre voie : il n'y a pas d'inscription par adresse électronique et mot de passe, ni mode anonyme ou invité. Un compte est nécessaire pour utiliser l'application.</p>
+
+<p>Vous pouvez commencer Iris en mode invité sans fournir d’adresse e-mail. Firebase crée un identifiant anonyme auquel sont rattachés votre configuration, vos habitudes, vos objectifs et le coaching facultatif. Invité ne signifie pas hors ligne. Vous pouvez poursuivre le suivi gratuit. Enregistrer votre compte avec Apple ou Google est facultatif.</p>
 <ul>
   <li>D'<strong>Apple</strong> nous recevons un jeton d'identité, votre nom et votre adresse électronique. Apple n'envoie le nom et l'adresse <strong>que la première fois</strong> où vous autorisez Iris. Si vous avez choisi « Masquer mon adresse e-mail », l'adresse que nous recevons est une adresse relais d'Apple et non la vôtre. Se connecter avec Apple fonctionne sur Android comme sur iPhone.</li>
   <li>De <strong>Google</strong> nous recevons un jeton d'identité, votre adresse électronique et l'adresse web de votre photo de profil Google.</li>
 </ul>
 <div class="note">
-<p><strong>Une conséquence à connaître avant de choisir.</strong> Se connecter avec Apple et se connecter avec Google créent <strong>deux comptes distincts</strong>, même lorsque tous deux portent la même adresse électronique. Les habitudes, l'historique et tout abonnement appartiennent à l'un d'eux et ne sont pas visibles depuis l'autre, et il ne nous est pas possible de les fusionner.</p>
+<p>Enregistrer un compte invité avec une connexion Apple ou Google encore inutilisée conserve le même identifiant Iris et ses données. Si cette connexion appartient déjà à un compte Iris, ce compte existant s’ouvre ; les comptes et leurs données privées ne sont pas fusionnés. Pour retrouver un compte, utilisez sa connexion d’origine. Sans connexion enregistrée, supprimer l’application ou ses identifiants peut faire perdre l’accès aux données invité.</p>
 </div>
 
 <h2><span class="n">3</span>Ce que nous collectons</h2>
+
 <h3>Votre compte</h3>
-<p>Votre adresse électronique et l'identifiant de compte délivré par Apple ou Google. Votre adresse électronique est conservée dans Firebase Authentication et <strong>n'est pas inscrite dans votre fiche de profil</strong> ; une routine de notre serveur l'en retire, ainsi que plusieurs autres champs privés, à chaque écriture.</p>
+<p>Un identifiant Firebase, y compris pour les invités ; puis, si vous enregistrez le compte, l’identifiant et l’adresse e-mail fournis par Apple ou Google. L’adresse reste dans Firebase Authentication, hors du profil public.</p>
 <h3>Votre profil</h3>
 <p>Un nom d'utilisateur, que vous choisissez ; un nom affiché ; une courte biographie facultative ; une photo de profil facultative ; et la date de création du compte. La section 4 explique qui peut les voir.</p>
 <h3>Vos habitudes et votre relevé</h3>
@@ -28,7 +30,9 @@
 <h3>Votre appareil</h3>
 <p>Un identifiant d'installation délivré par Firebase, qui est l'adresse à laquelle les notifications sont envoyées ; la version et la compilation de l'application ; votre fuseau horaire ; la langue que vous avez choisie dans l'application ; si vous avez autorisé les notifications ; la plateforme ; et la date à laquelle l'appareil a été vu pour la dernière fois. Il existe une telle fiche par appareil sur lequel vous vous connectez, et elle est supprimée lorsque vous vous déconnectez de cet appareil.</p>
 <h3>Vos achats</h3>
-<p>Sur iPhone, votre identifiant de compte et les reçus d'achat délivrés par Apple. Voir la section 9.</p>
+<p>Votre identifiant Iris, les références des produits et transactions, les reçus ou jetons d’achat, l’historique et l’état de l’abonnement. Apple ou Google encaisse ; Iris ne reçoit jamais votre numéro de carte.</p>
+
+<p>Iris ne vend pas de données personnelles, ne diffuse pas de publicité et ne vous suit pas entre applications et sites. Des diagnostics limités de l’introduction sont enregistrés dans votre compte : démarrage, choix d’habitude ou d’objectif, offre consultée, poursuite gratuite, achat ou enregistrement du compte, avec date et statut invité. Aucun texte de conversation ; ils sont supprimés avec le compte. Les données RevenueCat et journaux de sécurité sont distincts. Aucun SDK tiers de publicité ni de rapports de plantage. Nous conservons au maximum 200 de ces événements d’introduction par compte.</p>
 
 <h2><span class="n">4</span>Ce que d'autres personnes peuvent voir</h2>
 <p><strong>Votre fiche de profil peut être lue par tout compte Iris connecté.</strong> Ce n'est pas une négligence : c'est ce qui permet à une autre personne de vous trouver par votre nom d'utilisateur et de vous envoyer une demande d'ami. Cette fiche contient votre nom d'utilisateur, votre nom affiché, votre biographie, l'adresse de votre photo de profil, la date de votre inscription et vos réglages de visibilité.</p>
@@ -37,9 +41,10 @@
 <div class="note">
 <p><strong>Compétitions — merci de lire ce paragraphe.</strong> Une compétition est facultative et vous y entrez délibérément. Lorsque vous le faites, <strong>chacun des autres participants acceptés peut voir les noms des habitudes que vous y avez engagées et votre relevé jour par jour de celles-ci — lesquelles vous avez accomplies et lesquelles vous avez manquées, pour chaque jour de la manche</strong> — ainsi que vos points et le nombre de manches que vous avez gagnées. Si vous choisissez en outre de partager une photographie dans une compétition, ces mêmes participants peuvent la voir. Rien d'autre de ce qui vous appartient ne devient visible.</p>
 </div>
-<p><strong>Personne d'autre que vous</strong> ne peut lire vos listes d'habitudes, les descriptions de vos habitudes, votre historique hebdomadaire, vos objectifs, vos jalons, vos réglages, les fiches de vos appareils, votre liste d'amis ni vos conversations avec Iris.</p>
+<p>Les autres utilisateurs Iris ne peuvent lire vos listes ou descriptions d’habitudes, votre historique hebdomadaire, vos objectifs, étapes, réglages, notifications, liste d’amis ou conversations avec Iris, hormis les informations de compétition que vous choisissez de partager comme expliqué ci-dessus. Si vous nous signalez un contenu sélectionné, le développeur peut le lire pour examiner le signalement.</p>
 
 <h2><span class="n">5</span>Photographies</h2>
+<p><strong>Le suivi et les photos locales d’habitudes, illimitées et en pleine qualité, sont gratuits. Prendre une photo ne souscrit aucun abonnement. Seule une copie expressément partagée dans une compétition est envoyée aux autres participants.</strong></p>
 <p>Il en existe quatre sortes, et deux d'entre elles ne quittent jamais votre téléphone.</p>
 <p><strong>Les photographies de preuve d'une habitude restent sur votre appareil.</strong> Elles sont prises avec l'appareil photo intégré à l'application ; il n'existe aucun moyen d'en importer une depuis votre galerie, de manière définitive et par conception. L'image est écrite dans l'espace de stockage privé de l'application sur le téléphone. Ce qui parvient à notre base de données est une <strong>référence locale</strong> — un court texte, pas une image — afin que votre autre appareil sache qu'une photographie existe pour ce jour-là. <strong>Nous ne recevons jamais l'image.</strong></p>
 <p><strong>Les photographies de jalons restent sur votre appareil</strong> de la même manière. Celles-là, vous pouvez les choisir dans votre galerie.</p>
@@ -64,6 +69,7 @@
 <p><strong>La voix parlée d'Iris</strong> est produite par Google Cloud Text-to-Speech à partir du texte de <strong>sa propre réponse</strong>, que notre serveur lit dans sa propre copie de la conversation. Vos paroles ne sont pas envoyées à ce service. L'audio obtenu est mis en cache par nous, désigné par une empreinte du texte et non par une personne, et supprimé après trente jours.</p>
 
 <h2><span class="n">8</span>Qui reçoit vos données</h2>
+
 <p>Six entreprises. Chacune agit sur nos instructions, pour la finalité indiquée.</p>
 <h3>Google LLC</h3>
 <p>Le principal destinataire, dans plusieurs rôles distincts : Firebase Authentication, qui détient votre connexion et votre adresse électronique ; Cloud Firestore, la base de données qui contient tout ce que décrit la section 3 sauf votre adresse électronique ; Cloud Storage, qui détient votre photo de profil, les photographies de compétition et l'audio de synthèse mis en cache ; Cloud Functions aux États-Unis, qui est notre serveur ; Firebase Cloud Messaging, qui délivre les notifications ; Firebase App Check et Firebase Installations, pour l'attestation de l'appareil et l'identifiant d'installation ; Google Sign-In, si vous l'utilisez ; l'API Gemini, qui reçoit votre conversation <strong>orale</strong> comme décrit à la section 6 ; Google Cloud Text-to-Speech, qui ne reçoit que les réponses d'Iris ; et, sur Android, les services Google Play pour l'infrastructure d'achat, l'attestation d'intégrité et l'invitation à noter l'application. Si vous vous êtes connecté avec Google et n'avez pas remplacé votre photo, les téléphones des autres personnes vont chercher cette photo directement sur les serveurs de Google.</p>
@@ -74,14 +80,15 @@
 <h3>Apple Inc.</h3>
 <p>Se connecter avec Apple, <strong>sur Android comme sur iPhone</strong> ; le service de notifications push d'Apple, qui constitue la dernière étape de chaque notification délivrée à un iPhone ; App Attest, pour l'attestation de l'appareil ; et l'App Store, pour les achats.</p>
 <h3>RevenueCat, Inc.</h3>
-<p>Sur iPhone uniquement, et uniquement pour les abonnements : votre identifiant de compte, votre historique d'achats et de reçus, les informations sur l'appareil que son logiciel recueille, et le jeton d'attribution publicitaire d'Apple. Sur Android, ce composant est présent dans l'application mais inactif, et ne reçoit rien.</p>
+<p>Sur iPhone et dans les versions Android configurées pour les abonnements, RevenueCat traite l’identifiant Iris, les achats et reçus, l’état de l’abonnement et les informations de l’appareil recueillies par son logiciel. Les identifiants invités permettent un achat avant l’inscription facultative. Sur iPhone, le jeton d’attribution publicitaire Apple est aussi recueilli. La disponibilité dépend de la version et de la boutique ; une offre indisponible ne signifie pas que tout traitement des abonnements est inactif.</p>
 <h3>GitHub, Inc.</h3>
 <p>Héberge la page que vous lisez. Elle voit donc votre adresse IP et les informations de votre navigateur lorsque vous l'ouvrez, comme le ferait tout hébergeur web. Elle ne reçoit rien d'autre et n'a aucun accès à votre compte Iris.</p>
 <h3>Transfert hors de votre pays</h3>
 <p>L'ensemble du traitement a lieu aux États-Unis. Si vous vous trouvez dans l'Espace économique européen ou au Royaume-Uni, ces transferts sont effectués au titre des accords de traitement de données que nous avons conclus avec chacune des entreprises ci-dessus, lesquels intègrent les clauses contractuelles types de la Commission européenne.</p>
 
 <h2><span class="n">9</span>Achats</h2>
-<p>Le paiement est toujours encaissé par Apple ou Google, et nous ne voyons jamais un numéro de carte. Toutes les limites d'Iris sont actuellement désactivées et toutes les fonctions sont disponibles sans frais ; aucun achat ne peut donc être effectué à ce jour. Sur iPhone, l'état de l'abonnement est enregistré par RevenueCat comme décrit à la section 8.</p>
+<p>Le suivi et les photos locales en pleine qualité sont gratuits. Le coaching continu Iris est un abonnement facultatif lorsqu’il est proposé. L’application et la fenêtre native App Store ou Google Play indiquent le forfait mensuel ou annuel, le prix local, la période, le renouvellement et l’essai éventuel. L’essai de sept jours exige l’éligibilité confirmée par la boutique ; un ancien abonnement peut l’exclure. Les conditions affichées avant confirmation font foi. Aucun achat n’est nécessaire pour continuer le suivi.</p>
+<p>Utilisez Restaurer les achats dans Iris avec le compte de boutique ayant acheté et le bon compte Iris. Si la vérification est en attente ou l’accès absent, contactez-nous avant de racheter. Gérez ou résiliez auprès de la boutique ayant facturé. Supprimer Iris ou son compte, ou retirer une autorisation d’IA, ne résilie pas l’abonnement. Résiliez avant l’échéance d’essai ou de renouvellement indiquée pour éviter le prélèvement suivant.</p>
 
 <h2><span class="n">10</span>Ce sur quoi les modèles sont entraînés</h2>
 <p>Nous n'avons autorisé aucune des entreprises de la section 8 à entraîner des modèles sur ce que vous envoyez à Iris, et chacune d'elles déclare qu'elle ne le fait pas :</p>
@@ -94,31 +101,27 @@
 <p>Il s'agit des engagements propres des fournisseurs, au titre des conditions commerciales payantes sous lesquelles nous détenons nos comptes. Ce ne sont pas des garanties que nous soyons en mesure de donner au nom d'une autre entreprise ; les conditions en vigueur de chaque fournisseur prévalent. Si cette situation change, la présente section changera avec elle.</p>
 
 <h2><span class="n">11</span>Ce que nous ne faisons jamais</h2>
-<p>Nous ne diffusons pas de publicité dans Iris et nous ne vendons aucun espace publicitaire. Iris ne contient <strong>aucun logiciel de mesure d'audience, aucun logiciel de rapport d'incident et aucun logiciel publicitaire</strong> d'aucune sorte, hormis l'unique jeton d'attribution d'Apple nommé à la section 8. Nous ne vous suivons pas à travers d'autres applications ou sites web. <strong>Nous ne vendons pas vos informations personnelles et nous ne les partageons pas à des fins de publicité comportementale inter-contextuelle</strong>, sous aucune définition de ces termes, y compris celle de la Californie. Nous ne vous profilons pas au bénéfice d'un tiers, et nous ne constituons ni ne vendons de segments d'audience.</p>
+<p>Iris ne vend pas de données personnelles, ne diffuse pas de publicité et ne vous suit pas entre applications et sites. Des diagnostics limités de l’introduction sont enregistrés dans votre compte : démarrage, choix d’habitude ou d’objectif, offre consultée, poursuite gratuite, achat ou enregistrement du compte, avec date et statut invité. Aucun texte de conversation ; ils sont supprimés avec le compte. Les données RevenueCat et journaux de sécurité sont distincts. Aucun SDK tiers de publicité ni de rapports de plantage. Nous conservons au maximum 200 de ces événements d’introduction par compte.</p>
 
 <h2><span class="n">12</span>Pourquoi nous avons le droit de les traiter</h2>
+
 <p>Pour les lecteurs de l'Espace économique européen et du Royaume-Uni, nos bases légales sont les suivantes. Nous nous appuyons sur l'<strong>exécution d'un contrat</strong> pour tout ce qui est nécessaire à la fourniture de l'application : votre compte, vos habitudes, votre historique et les réponses d'Iris. Nous nous appuyons sur votre <strong>consentement</strong>, donné dans les demandes d'autorisation de votre appareil et retirable à tout moment au même endroit, pour l'appareil photo, le microphone, les notifications et l'accès à votre galerie. Nous nous appuyons sur notre <strong>intérêt légitime</strong> à maintenir le service sûr et à prévenir les abus.</p>
-<div class="note">
-<p><strong>Une habitude peut révéler quelque chose sur votre santé.</strong> Une habitude telle que <em>prendre mon traitement</em>, <em>aller à la salle de sport</em> ou <em>pas d'alcool aujourd'hui</em> dit quelque chose de vous, et il peut en aller de même de ce que vous écrivez à Iris. Lorsque vous saisissez une telle habitude ou rédigez un tel message, vous le faites volontairement et, en le faisant, vous donnez votre <strong>consentement explicite</strong> à son traitement tel que décrit dans la présente Politique — article 9, paragraphe 2, point a) du RGPD. Rien dans Iris ne vous demande d'information sur votre santé, nous n'en exigeons aucune, et vous pouvez supprimer n'importe quelle habitude, n'importe quel objectif ou le compte entier à tout moment.</p>
-</div>
+<div class="note"><p>Habitudes, objectifs et messages peuvent révéler des données sensibles, notamment de santé. Iris ne les exige pas et n’est pas un service de santé. Évitez les informations que vous ne souhaitez pas voir traitées comme décrit ici. Vous pouvez supprimer une habitude, un objectif ou le compte, ou demander l’effacement d’une conversation. Lire cette politique n’autorise pas un usage supplémentaire.</p></div>
 
 <h2><span class="n">13</span>Combien de temps nous les conservons</h2>
 <p>Votre profil, vos habitudes, votre historique hebdomadaire, vos objectifs, vos jalons et vos conversations archivées sont conservés <strong>jusqu'à ce que vous supprimiez votre compte</strong>. Il n'y a pas d'expiration automatique, et l'application ne vous permet pas de relire les conversations archivées.</p>
 <p>Deux choses expirent d'elles-mêmes : les <strong>photographies de compétition</strong> sont supprimées lorsque la manche est tranchée et ne sont en aucun cas conservées au-delà de <strong>huit jours</strong> ; l'<strong>audio de synthèse mis en cache</strong> décrit à la section 7 est supprimé après <strong>trente jours</strong>. La fiche d'un appareil est supprimée lorsque vous vous en déconnectez.</p>
 
+<p data-report-retention="conditional">Lorsque le signalement dans l’application est disponible, il contient votre identifiant de compte, le contenu sélectionné, sa référence, le motif et toute note que vous choisissez d’envoyer. Seuls le développeur et les modérateurs autorisés peuvent lire le signalement privé. Le contenu signalé et les dossiers de modération sont conservés au maximum 90 jours, sauf obligation légale contraire. Les sauvegardes permettant de restaurer un contenu masqué expirent après 90 jours. La suppression du compte efface les signalements et sauvegardes liés à ce compte selon la politique de suppression des comptes.</p>
+
 <h2><span class="n">14</span>Supprimer votre compte</h2>
-<p>Ouvrez le menu, puis votre profil, puis Supprimer le compte, dans l'une ou l'autre application. L'effet est immédiat et irréversible. Sur un compte Apple, nous vous demandons d'abord de vous reconnecter, afin de pouvoir également révoquer le jeton Apple d'Iris.</p>
-<p><strong>Ce qui est supprimé :</strong> votre profil et toutes les fiches qui en dépendent — habitudes, historique hebdomadaire, objectifs, jalons, réglages, liens d'amitié, blocages, invitations, fiches d'appareils, et <strong>toutes les conversations archivées avec Iris</strong> ; les copies de votre nom et de votre photo détenues dans les comptes de vos amis et dans les listes de compétitions ; vos fiches de score en compétition et toute photographie que vous avez partagée ; votre photo de profil téléversée ; votre compte de connexion lui-même ; et <strong>toutes les photographies d'Iris sur le téléphone que vous tenez</strong>, puisqu'elles n'ont jamais été ailleurs.</p>
-<p><strong>Ce qui subsiste, et pourquoi :</strong></p>
-<ul>
-  <li>Une compétition que vous n'avez pas créée <strong>continue pour les autres joueurs</strong>, votre nom étant retiré de la liste. Les manches déjà tranchées ne sont pas réécrites, de sorte qu'un résultat passé peut continuer d'indiquer que vous l'avez gagnée.</li>
-  <li>Toute copie que vous avez choisi d'enregistrer dans votre propre pellicule. Elle est à vous et elle est sur votre téléphone.</li>
-  <li>Toute sauvegarde d'appareil déjà réalisée.</li>
-  <li>La trace de vos achats chez RevenueCat, que nous ne pouvons pas supprimer en votre nom. Écrivez-nous et nous transmettrons la demande.</li>
-  <li>L'audio de synthèse mis en cache de la section 7, désigné par le texte et non par une personne, et qui expire dans un délai de trente jours.</li>
-  <li>Les entrées de journal du serveur attestant que des requêtes ont eu lieu. Elles contiennent l'identifiant de compte et aucun contenu de message, et sont conservées selon la durée de rétention de Google.</li>
-</ul>
-<p>Les photographies présentes sur un <strong>second</strong> appareil sont retirées de nos fiches mais demeurent sur cet appareil jusqu'à ce que vous vous en déconnectiez ou supprimiez l'application.</p>
+<p>Dans l’application : menu, profil, Supprimer le compte. Une nouvelle connexion peut être demandée pour vérifier la propriété ou révoquer Apple. La suppression terminée est définitive. En cas d’erreur, contactez-nous pour vérifier le nettoyage restant.</p>
+<p>Même sans l’application, écrivez à <a href="mailto:iris26app@gmail.com?subject=Supprimer%20mon%20compte%20Iris">iris26app@gmail.com</a>, objet « Supprimer mon compte Iris ». Indiquez votre nom d’utilisateur ou e-mail de connexion et Apple ou Google. Avec Masquer mon adresse e-mail, indiquez l’adresse relais si connue. Pour un invité, fournissez l’identifiant si vous l’avez ; sinon, dites-le. Aucune réinstallation n’est nécessaire pour demander la suppression.</p>
+<p>Nous vérifions la propriété, normalement en répondant à l’adresse liée au compte. Nous ne demandons jamais mot de passe, code de vérification, coordonnées bancaires ou paiement. Sans identifiant récupérable ni connexion liée, un compte invité peut être impossible à identifier sûrement ; nous expliquerons les vérifications possibles. Nous répondons sous dix jours ouvrés et précisons les étapes et la confirmation.</p>
+<p>Sont supprimés l’identité de connexion, le profil, les habitudes, l’historique, les objectifs, les étapes, les conversations, les réglages, les appareils, les diagnostics, les tâches de coaching en attente, les liens sociaux, l’avatar envoyé, les scores et photos partagées associés. Vos compétitions sont supprimées ; celles des autres peuvent continuer sans vous. La suppression dans l’application efface aussi les photos Iris de cet appareil. Une demande par e-mail ne peut pas effacer à distance un appareil hors ligne.</p>
+<p>Restent hors de cette suppression : galerie et sauvegardes personnelles, fichiers sur un autre appareil jusqu’à leur effacement, résultats de manches déjà décidées, cache vocal indexé par texte expirant après 30 jours et journaux de sécurité selon la conservation de l’hébergeur. Apple et Google conservent les transactions selon leurs règles. Demandez-nous de coordonner séparément la suppression chez RevenueCat. Les échanges de support sont conservés le temps de traiter et documenter la demande, sous réserve d’obligations légales. Les photos de compétition expirent à la décision de la manche, avec une règle de stockage de huit jours en secours.</p>
+<p>Suppression du compte et résiliation sont distinctes. Résiliez auprès d’<a href="https://support.apple.com/en-us/118428">Apple</a> ou de <a href="https://support.google.com/googleplay/answer/7018481">Google Play</a> ; désinstaller ou supprimer le compte ne bloque pas le renouvellement. Vous pouvez demander la suppression sans réinstaller ni acheter.</p>
+<p><a href="https://jesuslegardi.github.io/iris-support/?lang=fr#delete-account">Supprimer votre compte Iris et vos données</a></p>
 
 <h2><span class="n">15</span>Vos droits</h2>
 <p>Qui que vous soyez et où que vous viviez, vous pouvez nous demander une copie de vos données, leur rectification, leur effacement, leur remise dans un format portable, la cessation d'un usage déterminé, ou le retrait d'une autorisation que vous avez donnée. Écrivez à <a href="mailto:iris26app@gmail.com">iris26app@gmail.com</a>. <strong>Nous répondons dans un délai de dix jours ouvrables</strong>, et en tout état de cause dans tout délai plus court exigé par la loi de votre lieu de résidence. Nous ne facturons rien et nous ne vous demandons pas de motif.</p>

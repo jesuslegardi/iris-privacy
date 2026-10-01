@@ -1,24 +1,26 @@
-<article data-lang="de">
+<article lang="de" data-lang="de">
 <h1>Datenschutzerklärung</h1>
-<p class="effective">Iris für iPhone und Android · Gültig ab 5. September 2026 · Diese Fassung ersetzt alle früheren</p>
+<p class="effective">Iris · 1. Oktober 2026</p>
 
 <h2><span class="n">1</span>Gegenstand</h2>
 <p>Diese Erklärung legt dar, welche personenbezogenen Daten die Anwendung Iris erhebt, wozu sie erhoben werden, wer sie erhält, wie lange sie gespeichert werden und was Sie von uns verlangen können. Sie gilt für Iris für iPhone und Iris für Android sowie für den Server, der beide trägt. Für nichts anderes gilt sie.</p>
 <p>„Iris“ bezeichnet die Anwendung und die Dienste, die sie tragen. „Wir“ und „unser“ bezeichnen die am Ende dieser Erklärung genannte Person.</p>
 
 <h2><span class="n">2</span>Die Anmeldung</h2>
-<p>Iris hat kein Passwort. Sie melden sich mit <strong>Bei Apple anmelden</strong> oder mit <strong>Google</strong> an, und einen anderen Weg gibt es nicht: es gibt keine Registrierung mit E-Mail-Adresse und Passwort und keinen anonymen oder Gastmodus. Für die Nutzung der Anwendung ist ein Konto erforderlich.</p>
+
+<p>Du kannst Iris als Gast ohne E-Mail-Adresse starten. Firebase erstellt eine anonyme Kontokennung für deine Einrichtung, Gewohnheiten, Ziele und das optionale Coaching. Gast bedeutet nicht offline. Du kannst den kostenlosen Tracker weiter nutzen. Das Speichern mit Apple oder Google ist freiwillig.</p>
 <ul>
   <li>Von <strong>Apple</strong> erhalten wir ein Identitätstoken, Ihren Namen und Ihre E-Mail-Adresse. Apple übermittelt Name und Adresse <strong>nur beim ersten Mal</strong>, wenn Sie Iris autorisieren. Haben Sie „Meine E-Mail-Adresse verbergen“ gewählt, ist die Adresse, die wir erhalten, eine Weiterleitungsadresse von Apple und nicht Ihre eigene. Bei Apple anmelden funktioniert auf Android ebenso wie auf dem iPhone.</li>
   <li>Von <strong>Google</strong> erhalten wir ein Identitätstoken, Ihre E-Mail-Adresse und die Web-Adresse Ihres Google-Profilbildes.</li>
 </ul>
 <div class="note">
-<p><strong>Eine Folge, die Sie vor Ihrer Wahl kennen sollten.</strong> Die Anmeldung mit Apple und die Anmeldung mit Google erzeugen <strong>zwei getrennte Konten</strong>, selbst wenn beide dieselbe E-Mail-Adresse tragen. Gewohnheiten, Verlauf und ein etwaiges Abonnement gehören zu einem von ihnen und sind vom anderen aus nicht sichtbar; wir können sie nicht zusammenführen.</p>
+<p>Speicherst du ein Gastkonto mit einer bisher ungenutzten Apple- oder Google-Anmeldung, bleiben Iris-Kennung und Gastdaten erhalten. Gehört die Anmeldung bereits zu einem Iris-Konto, öffnet sich dieses bestehende Konto; Konten und private Daten werden nicht zusammengeführt. Nutze zum Wiederherstellen die ursprüngliche Anmeldung. Ohne gespeicherte Anmeldung kann beim Entfernen der App oder ihrer Zugangsdaten der Zugriff auf Gastdaten verloren gehen.</p>
 </div>
 
 <h2><span class="n">3</span>Was wir erheben</h2>
+
 <h3>Ihr Konto</h3>
-<p>Ihre E-Mail-Adresse und die von Apple oder Google ausgegebene Kontokennung. Ihre E-Mail-Adresse wird in Firebase Authentication gehalten und <strong>nicht in Ihren Profildatensatz geschrieben</strong>; eine Routine auf unserem Server entfernt sie bei jedem Schreibvorgang aus diesem Datensatz, ebenso mehrere weitere private Felder.</p>
+<p>Eine Firebase-Kontokennung, auch für Gäste; nach dem Speichern außerdem die von Apple oder Google gelieferte Anmeldekennung und E-Mail-Adresse. Die E-Mail bleibt in Firebase Authentication und ist kein Teil des öffentlichen Profils.</p>
 <h3>Ihr Profil</h3>
 <p>Ein Benutzername, den Sie wählen; ein Anzeigename; eine optionale kurze Biografie; ein optionales Profilbild; und das Datum, an dem das Konto angelegt wurde. Abschnitt 4 erläutert, wer diese sehen kann.</p>
 <h3>Ihre Gewohnheiten und Ihr Verlauf</h3>
@@ -28,7 +30,9 @@
 <h3>Ihr Gerät</h3>
 <p>Eine von Firebase ausgegebene Installationskennung, die die Adresse ist, an die Mitteilungen gesendet werden; Version und Build der Anwendung; Ihre Zeitzone; die Sprache, die Sie in der Anwendung gewählt haben; ob Sie Mitteilungen erlaubt haben; die Plattform; und wann das Gerät zuletzt gesehen wurde. Es gibt einen solchen Datensatz je Gerät, auf dem Sie sich anmelden, und er wird gelöscht, wenn Sie sich auf diesem Gerät abmelden.</p>
 <h3>Ihre Käufe</h3>
-<p>Auf dem iPhone Ihre Kontokennung und die von Apple ausgegebenen Kaufbelege. Siehe Abschnitt 9.</p>
+<p>Deine Iris-Kennung, Produkt- und Transaktionskennungen, Belege oder Kauftoken, Kaufverlauf und Abostatus. Apple oder Google wickelt die Zahlung ab; Iris erhält keine Kartennummer.</p>
+
+<p>Iris verkauft keine persönlichen Daten, zeigt keine Werbung und verfolgt dich nicht über andere Apps und Websites. Begrenzte Einführungsdiagnosen werden unter deinem Konto gespeichert: Start, Wahl von Gewohnheit oder Ziel, Angebot, kostenloses Fortfahren, Kauf oder Kontospeicherung, mit Zeit und Gaststatus. Sie enthalten keinen Chattext und werden mit dem Konto gelöscht. RevenueCat-Daten und Sicherheitsprotokolle sind getrennt. Es gibt kein fremdes Werbe- oder Absturzbericht-SDK. Wir speichern höchstens 200 dieser Einführungsereignisse pro Konto.</p>
 
 <h2><span class="n">4</span>Was andere Personen sehen können</h2>
 <p><strong>Ihr Profildatensatz kann von jedem angemeldeten Iris-Konto gelesen werden.</strong> Das ist kein Versehen: es ist genau das, was es einer anderen Person erlaubt, Sie über Ihren Benutzernamen zu finden und Ihnen eine Freundschaftsanfrage zu senden. Dieser Datensatz enthält Ihren Benutzernamen, Ihren Anzeigenamen, Ihre Biografie, die Adresse Ihres Profilbildes, das Datum Ihrer Anmeldung und Ihre Sichtbarkeitseinstellungen.</p>
@@ -37,9 +41,10 @@
 <div class="note">
 <p><strong>Wettbewerbe — bitte lesen Sie diesen Absatz.</strong> Ein Wettbewerb ist freiwillig, und Sie treten ihm bewusst bei. Wenn Sie das tun, <strong>kann jeder andere angenommene Teilnehmer die Namen der Gewohnheiten sehen, mit denen Sie angetreten sind, und Ihren Verlauf dazu Tag für Tag — welche Sie erledigt und welche Sie verpasst haben, an jedem Tag der Runde</strong> — dazu Ihre Punkte und die Zahl der von Ihnen gewonnenen Runden. Wenn Sie überdies eine Fotografie in einem Wettbewerb teilen, können dieselben Teilnehmer sie sehen. Nichts weiter von Ihnen wird sichtbar.</p>
 </div>
-<p><strong>Niemand außer Ihnen</strong> kann Ihre Gewohnheitslisten, die Beschreibungen Ihrer Gewohnheiten, Ihren Wochenverlauf, Ihre Ziele, Ihre Meilensteine, Ihre Einstellungen, Ihre Gerätedatensätze, Ihre Freundesliste oder Ihre Gespräche mit Iris lesen.</p>
+<p>Andere Iris-Nutzer können deine Gewohnheitslisten und -beschreibungen, den Wochenverlauf, Ziele, Meilensteine, Einstellungen, Benachrichtigungsdaten, Freundesliste oder Gespräche mit Iris nicht lesen. Ausgenommen sind Wettbewerbsinformationen, die du wie oben beschrieben teilst. Meldest du uns ausgewählte Inhalte, kann der Entwickler sie zur Prüfung der Meldung lesen.</p>
 
 <h2><span class="n">5</span>Fotografien</h2>
+<p><strong>Tracking und unbegrenzte lokale Gewohnheitsfotos in voller Qualität sind kostenlos. Ein Foto schließt kein Coaching-Abo ab. Nur eine ausdrücklich im Wettbewerb geteilte Kopie wird für die anderen Teilnehmer hochgeladen.</strong></p>
 <p>Es gibt vier Arten, und zwei von ihnen verlassen Ihr Telefon nie.</p>
 <p><strong>Nachweisfotografien zu einer Gewohnheit bleiben auf Ihrem Gerät.</strong> Sie werden mit der Kamera innerhalb der Anwendung aufgenommen; es gibt keine Möglichkeit, eine aus Ihrer Galerie einzufügen — dauerhaft und mit Absicht. Das Bild wird in den privaten Speicher der Anwendung auf dem Telefon geschrieben. Was unsere Datenbank erreicht, ist ein <strong>lokaler Verweis</strong> — ein kurzer Text, kein Bild — damit Ihr anderes Gerät weiß, dass für diesen Tag eine Fotografie besteht. <strong>Wir erhalten das Bild nie.</strong></p>
 <p><strong>Meilenstein-Fotografien bleiben auf Ihrem Gerät</strong> in derselben Weise. Diese dürfen Sie aus Ihrer Galerie wählen.</p>
@@ -64,6 +69,7 @@
 <p><strong>Die gesprochene Stimme von Iris</strong> wird von Google Cloud Text-to-Speech aus dem Text <strong>ihrer eigenen Antwort</strong> erzeugt, den unser Server aus seiner eigenen Kopie des Gesprächs liest. Ihre Worte werden nicht an diesen Dienst gesendet. Den entstehenden Ton speichern wir zwischen, adressiert über einen Fingerabdruck des Textes und nicht über eine Person, und löschen ihn nach dreißig Tagen.</p>
 
 <h2><span class="n">8</span>Wer Ihre Daten erhält</h2>
+
 <p>Sechs Unternehmen. Jedes handelt auf unsere Weisung, zu dem genannten Zweck.</p>
 <h3>Google LLC</h3>
 <p>Der größte Empfänger, in mehreren getrennten Rollen: Firebase Authentication, das Ihre Anmeldung und Ihre E-Mail-Adresse hält; Cloud Firestore, die Datenbank mit allem aus Abschnitt 3 außer Ihrer E-Mail-Adresse; Cloud Storage, das Ihr Profilbild, die Wettbewerbsfotografien und den zwischengespeicherten Sprachton hält; Cloud Functions in den Vereinigten Staaten, unser Server; Firebase Cloud Messaging, das Mitteilungen ausliefert; Firebase App Check und Firebase Installations für die Geräteattestierung und die Installationskennung; Google Sign-In, falls Sie es nutzen; die Gemini-API, die Ihr <strong>gesprochenes</strong> Gespräch nach Abschnitt 6 erhält; Google Cloud Text-to-Speech, das allein die Antworten von Iris erhält; und auf Android die Google-Play-Dienste für die Kaufabwicklung, die Integritätsattestierung und die Bewertungsanfrage. Haben Sie sich mit Google angemeldet und Ihr Bild nicht ersetzt, so holen die Telefone anderer Personen dieses Bild unmittelbar von den Servern von Google.</p>
@@ -74,14 +80,15 @@
 <h3>Apple Inc.</h3>
 <p>Bei Apple anmelden, <strong>auf Android ebenso wie auf dem iPhone</strong>; der Apple-Push-Mitteilungsdienst, der letzte Schritt jeder an ein iPhone ausgelieferten Mitteilung; App Attest für die Geräteattestierung; und der App Store für Käufe.</p>
 <h3>RevenueCat, Inc.</h3>
-<p>Nur auf dem iPhone und nur für Abonnements: Ihre Kontokennung, Ihr Kauf- und Belegverlauf, die Geräteinformationen, die deren Software erhebt, und das Werbe-Attributionstoken von Apple. Auf Android ist dieser Bestandteil in der Anwendung vorhanden, aber untätig, und erhält nichts.</p>
+<p>Auf dem iPhone und in für Abos eingerichteten Android-Versionen verarbeitet RevenueCat Iris-Kennung, Käufe, Belege, Abostatus und von seiner Software erfasste Gerätedaten. Gastkennungen ermöglichen Käufe vor der freiwilligen Registrierung. Auf dem iPhone wird auch Apples Werbezuordnungstoken erfasst. Die Verfügbarkeit hängt von App-Version und Store ab; ein fehlendes Angebot bedeutet nicht, dass jede Aboverarbeitung inaktiv ist.</p>
 <h3>GitHub, Inc.</h3>
 <p>Beherbergt die Seite, die Sie lesen. Es sieht daher Ihre IP-Adresse und Ihre Browserangaben, wenn Sie sie öffnen, wie jeder Webhoster. Es erhält nichts weiter und hat keinerlei Zugang zu Ihrem Iris-Konto.</p>
 <h3>Übermittlung aus Ihrem Land</h3>
 <p>Die gesamte Verarbeitung findet in den Vereinigten Staaten statt. Befinden Sie sich im Europäischen Wirtschaftsraum oder im Vereinigten Königreich, so erfolgen diese Übermittlungen auf Grundlage der Auftragsverarbeitungsverträge, die wir mit jedem der vorgenannten Unternehmen unterhalten und die die Standardvertragsklauseln der Europäischen Kommission einbeziehen.</p>
 
 <h2><span class="n">9</span>Käufe</h2>
-<p>Die Zahlung nimmt stets Apple oder Google ein, und wir sehen nie eine Kartennummer. Alle Beschränkungen in Iris sind derzeit abgeschaltet und alle Funktionen kostenfrei verfügbar, sodass gegenwärtig kein Kauf möglich ist. Auf dem iPhone wird der Abonnementstand von RevenueCat nach Abschnitt 8 festgehalten.</p>
+<p>Tracker und lokale Fotos in voller Qualität sind kostenlos. Fortlaufendes Iris-Coaching ist, wo angeboten, ein freiwilliges Abo. App und natives Kaufblatt von App Store oder Google Play zeigen Monats- oder Jahresplan, lokalen Preis, Abrechnungszeitraum, Verlängerung und gegebenenfalls Probezeit. Sieben kostenlose Probetage gelten nur bei bestätigter Store-Berechtigung; frühere Abonnenten sind möglicherweise nicht berechtigt. Vor der Bestätigung gelten die angezeigten Store-Bedingungen. Zum weiteren Tracking ist kein Kauf nötig.</p>
+<p>Nutze Käufe wiederherstellen in Iris mit dem kaufenden Store-Konto und dem richtigen Iris-Konto. Bei ausstehender Prüfung oder fehlendem Zugang kontaktiere den Support vor einem erneuten Kauf. Verwalte oder kündige beim abrechnenden Store. App-Löschung, Kontolöschung oder Widerruf einer KI-Erlaubnis kündigen kein Abo. Kündige vor der angezeigten Probe- oder Verlängerungsfrist, um die nächste Zahlung zu vermeiden.</p>
 
 <h2><span class="n">10</span>Womit die Modelle trainiert werden</h2>
 <p>Wir haben keinem der Unternehmen in Abschnitt 8 erlaubt, Modelle mit dem zu trainieren, was Sie an Iris senden, und jedes von ihnen erklärt, dass es dies nicht tut:</p>
@@ -94,31 +101,27 @@
 <p>Dies sind Zusagen der Anbieter selbst, unter den kostenpflichtigen Geschäftsbedingungen, unter denen wir unsere Konten führen. Es sind keine Garantien, die wir im Namen eines anderen Unternehmens geben könnten; maßgeblich sind die jeweils geltenden Bedingungen jedes Anbieters. Ändert sich diese Lage, so ändert sich dieser Abschnitt mit ihr.</p>
 
 <h2><span class="n">11</span>Was wir nie tun</h2>
-<p>Wir werben nicht in Iris und verkaufen keinen Werbeplatz. Iris enthält <strong>keine Analysesoftware, keine Software zur Absturzberichterstattung und keine Werbesoftware</strong> irgendeiner Art, abgesehen von dem einen in Abschnitt 8 genannten Apple-Attributionstoken. Wir verfolgen Sie nicht über andere Anwendungen oder Websites. <strong>Wir verkaufen Ihre personenbezogenen Daten nicht und geben sie nicht für kontextübergreifende verhaltensbezogene Werbung weiter</strong>, unter keiner Definition dieser Begriffe, auch nicht der kalifornischen. Wir erstellen kein Profil von Ihnen zum Nutzen Dritter und bilden oder verkaufen keine Zielgruppensegmente.</p>
+<p>Iris verkauft keine persönlichen Daten, zeigt keine Werbung und verfolgt dich nicht über andere Apps und Websites. Begrenzte Einführungsdiagnosen werden unter deinem Konto gespeichert: Start, Wahl von Gewohnheit oder Ziel, Angebot, kostenloses Fortfahren, Kauf oder Kontospeicherung, mit Zeit und Gaststatus. Sie enthalten keinen Chattext und werden mit dem Konto gelöscht. RevenueCat-Daten und Sicherheitsprotokolle sind getrennt. Es gibt kein fremdes Werbe- oder Absturzbericht-SDK. Wir speichern höchstens 200 dieser Einführungsereignisse pro Konto.</p>
 
 <h2><span class="n">12</span>Warum wir sie verarbeiten dürfen</h2>
+
 <p>Für Leser im Europäischen Wirtschaftsraum und im Vereinigten Königreich sind dies unsere Rechtsgrundlagen. Wir stützen uns auf die <strong>Erfüllung eines Vertrags</strong> für alles, was zur Bereitstellung der Anwendung erforderlich ist: Ihr Konto, Ihre Gewohnheiten, Ihren Verlauf und die Antworten von Iris. Wir stützen uns auf Ihre <strong>Einwilligung</strong>, die Sie in den Berechtigungsabfragen Ihres Geräts erteilen und dort jederzeit widerrufen können, für Kamera, Mikrofon, Mitteilungen und Zugriff auf Ihre Galerie. Wir stützen uns auf unser <strong>berechtigtes Interesse</strong> daran, den Dienst sicher zu halten und Missbrauch zu verhindern.</p>
-<div class="note">
-<p><strong>Eine Gewohnheit kann etwas über Ihre Gesundheit offenbaren.</strong> Eine Gewohnheit wie <em>meine Medikamente nehmen</em>, <em>ins Fitnessstudio gehen</em> oder <em>heute kein Alkohol</em> sagt etwas über Sie, und dasselbe kann für das gelten, was Sie Iris schreiben. Wenn Sie eine solche Gewohnheit eingeben oder eine solche Nachricht schreiben, tun Sie das freiwillig und erteilen damit Ihre <strong>ausdrückliche Einwilligung</strong> in die Verarbeitung, wie diese Erklärung sie beschreibt — Artikel 9 Absatz 2 Buchstabe a DSGVO. Nichts in Iris fragt Sie nach Angaben zu Ihrer Gesundheit, wir verlangen keine, und Sie können jede Gewohnheit, jedes Ziel oder das ganze Konto jederzeit löschen.</p>
-</div>
+<div class="note"><p>Gewohnheiten, Ziele und Nachrichten können sensible Angaben einschließlich Gesundheitsdaten offenbaren. Iris verlangt diese nicht und ist kein Gesundheitsdienst. Gib keine Informationen ein, deren beschriebene Verarbeitung du nicht möchtest. Du kannst Gewohnheiten, Ziele oder dein Konto löschen oder die Entfernung eines Gesprächs verlangen. Das Lesen dieser Erklärung erlaubt keine zusätzliche Datennutzung.</p></div>
 
 <h2><span class="n">13</span>Wie lange wir sie speichern</h2>
 <p>Ihr Profil, Ihre Gewohnheiten, Ihr Wochenverlauf, Ihre Ziele, Ihre Meilensteine und Ihre archivierten Gespräche werden <strong>bis zur Löschung Ihres Kontos</strong> gespeichert. Es gibt keinen automatischen Ablauf, und die Anwendung lässt Sie archivierte Gespräche nicht nachlesen.</p>
 <p>Zwei Dinge verfallen von selbst: <strong>Wettbewerbsfotografien</strong> werden gelöscht, sobald die Runde entschieden ist, und in keinem Fall über <strong>acht Tage</strong> hinaus aufbewahrt; der in Abschnitt 7 beschriebene <strong>zwischengespeicherte Sprachton</strong> wird nach <strong>dreißig Tagen</strong> gelöscht. Der Datensatz eines Geräts wird gelöscht, wenn Sie sich auf ihm abmelden.</p>
 
+<p data-report-retention="conditional">Wo Meldungen in der App verfügbar sind, enthalten sie deine Kontokennung, den ausgewählten Inhalt, dessen Referenz, den Grund und eine freiwillige Anmerkung. Nur der Entwickler und autorisierte Moderatoren können die private Meldung lesen. Gemeldete Inhalte und Moderationsprotokolle bleiben bis zu 90 Tage gespeichert, sofern das Gesetz nichts anderes verlangt. Sicherungen zum Wiederherstellen ausgeblendeter Inhalte laufen nach 90 Tagen ab. Das Löschen des Kontos entfernt zugehörige Meldungen und Sicherungen nach der Richtlinie zur Kontolöschung.</p>
+
 <h2><span class="n">14</span>Ihr Konto löschen</h2>
-<p>Öffnen Sie das Menü, dann Ihr Profil, dann Konto löschen, in einer der beiden Anwendungen. Es wirkt sofort und kann nicht zurückgenommen werden. Bei einem Apple-Konto bitten wir Sie zunächst, sich erneut anzumelden, damit wir auch das Apple-Token von Iris widerrufen können.</p>
-<p><strong>Was gelöscht wird:</strong> Ihr Profil und jeder darunter liegende Datensatz — Gewohnheiten, Wochenverlauf, Ziele, Meilensteine, Einstellungen, Freundschaftszeilen, Blockierungen, Einladungen, Gerätedatensätze und <strong>jedes archivierte Gespräch mit Iris</strong>; die Kopien Ihres Namens und Ihres Bildes in den Konten Ihrer Freunde und in Wettbewerbslisten; Ihre Wettbewerbspunktdatensätze und jede von Ihnen geteilte Fotografie; Ihr hochgeladenes Profilbild; Ihr Anmeldekonto selbst; und <strong>jede Iris-Fotografie auf dem Telefon, das Sie in der Hand halten</strong>, da sie nur dort waren.</p>
-<p><strong>Was bestehen bleibt, und warum:</strong></p>
-<ul>
-  <li>Ein Wettbewerb, den Sie nicht angelegt haben, <strong>läuft für die übrigen Spieler weiter</strong>, wobei Sie von der Liste entfernt sind. Bereits entschiedene Runden werden nicht umgeschrieben, sodass ein früheres Ergebnis weiterhin festhalten kann, dass Sie sie gewonnen haben.</li>
-  <li>Jede Kopie, die Sie in Ihre eigene Aufnahmerolle zu sichern gewählt haben. Sie gehört Ihnen und liegt auf Ihrem Telefon.</li>
-  <li>Jede bereits erstellte Gerätesicherung.</li>
-  <li>Der Kaufdatensatz bei RevenueCat, den wir nicht in Ihrem Namen löschen können. Schreiben Sie uns, und wir leiten das Ersuchen weiter.</li>
-  <li>Der zwischengespeicherte Sprachton aus Abschnitt 7, der über den Text und nicht über eine Person adressiert ist und binnen dreißig Tagen verfällt.</li>
-  <li>Serverprotokolleinträge darüber, dass Anfragen stattgefunden haben. Sie enthalten die Kontokennung und keinen Nachrichteninhalt und werden nach der Aufbewahrungsfrist von Google gespeichert.</li>
-</ul>
-<p>Fotografien auf einem <strong>zweiten</strong> Gerät werden aus unseren Datensätzen entfernt, bleiben aber auf jenem Gerät, bis Sie sich dort abmelden oder die Anwendung löschen.</p>
+<p>In der App: Menü, Profil, Konto löschen. Eine erneute Anmeldung kann zur Bestätigung oder zum Widerruf des Apple-Zugangs nötig sein. Eine abgeschlossene Löschung ist endgültig. Melde Fehler, damit wir die verbleibende Bereinigung prüfen können.</p>
+<p>Auch nach der Deinstallation kannst du an <a href="mailto:iris26app@gmail.com?subject=Iris-Konto%20loeschen">iris26app@gmail.com</a> mit Betreff „Iris-Konto löschen“ schreiben. Nenne Benutzernamen oder Anmelde-E-Mail und Apple oder Google. Bei E-Mail-Adresse verbergen nenne nach Möglichkeit die Relay-Adresse. Als Gast nenne die Kontokennung, falls vorhanden; andernfalls teile das mit. Für die Anfrage ist keine Neuinstallation nötig.</p>
+<p>Vor der Löschung prüfen wir die Inhaberschaft, normalerweise durch Antwort an die zugehörige E-Mail-Adresse. Wir verlangen niemals Passwort, Bestätigungscodes, Kartendaten oder Zahlung. Ein Gastkonto ohne wiederherstellbare Kennung oder verknüpfte Anmeldung lässt sich möglicherweise nicht sicher zuordnen; wir erklären die verfügbaren Prüfungen. Wir antworten innerhalb von zehn Werktagen und erläutern Prüfung und Abschluss.</p>
+<p>Gelöscht werden Anmeldeidentität, Profil, Gewohnheiten, Verlauf, Ziele, Meilensteine, Gespräche, Einstellungen, Gerätedaten, Einführungsdiagnosen, ausstehende Coaching-Aufträge, soziale Verbindungen, hochgeladener Avatar sowie zugehörige Wettbewerbswertungen und geteilte Fotos. Eigene Wettbewerbe werden entfernt; fremde können ohne dich weiterlaufen. Die Löschung in der App entfernt außerdem Iris-Fotos auf diesem Gerät. Eine E-Mail-Anfrage kann keine Dateien auf einem offline befindlichen Gerät fernlöschen.</p>
+<p>Ausgenommen sind Kopien in Galerie und Backups, Dateien auf anderen Geräten bis zur dortigen Löschung, bereits entschiedene Rundenergebnisse, textbasierte Sprachcaches mit Ablauf nach 30 Tagen sowie Sicherheitsprotokolle nach den Fristen des Hosters. Für Transaktionen gelten Apples oder Googles Fristen. RevenueCat-Daten werden separat behandelt; bitte uns um Koordination der Löschung. Supportkorrespondenz bleibt, soweit zur Bearbeitung und Dokumentation oder gesetzlich nötig. Wettbewerbsfotos laufen bei Rundenentscheidung ab, mit einer Speicherregel von acht Tagen als Rückfallebene.</p>
+<p>Kontolöschung und Abokündigung sind getrennt. Kündige bei <a href="https://support.apple.com/en-us/118428">Apple</a> oder <a href="https://support.google.com/googleplay/answer/7018481">Google Play</a>; Deinstallation oder Kontolöschung stoppt keine Verlängerung. Die Löschanfrage erfordert weder Neuinstallation noch Kauf.</p>
+<p><a href="https://jesuslegardi.github.io/iris-support/?lang=de#delete-account">Iris-Konto und Daten löschen</a></p>
 
 <h2><span class="n">15</span>Ihre Rechte</h2>
 <p>Wer Sie auch sind und wo Sie auch leben, Sie können von uns eine Kopie Ihrer Daten verlangen, ihre Berichtigung, ihre Löschung, ihre Herausgabe in einem übertragbaren Format, die Beendigung einer bestimmten Nutzung oder den Widerruf einer von Ihnen erteilten Erlaubnis. Schreiben Sie an <a href="mailto:iris26app@gmail.com">iris26app@gmail.com</a>. <strong>Wir antworten innerhalb von zehn Werktagen</strong> und in jedem Fall innerhalb jeder kürzeren Frist, die das Recht Ihres Wohnorts verlangt. Wir verlangen kein Entgelt und fragen nicht nach einem Grund.</p>
