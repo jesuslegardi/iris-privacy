@@ -154,7 +154,7 @@
 
 <h2><span class="n">2</span>Signing in</h2>
 
-<p>You can start Iris as a guest without supplying an email address. Firebase creates an anonymous account identifier so your setup, habits, goals and optional coaching belong to you. Guest does not mean that data stays offline. You can continue with the free tracker. Saving your account with Apple or Google is optional.</p>
+<p>In versions that offer guest entry, you can start Iris as a guest without supplying an email address. Firebase creates an anonymous account identifier so your setup, habits, goals and optional coaching belong to you. Guest does not mean that data stays offline. You can continue with the free tracker. Saving your account with Apple or Google is optional.</p>
 <ul>
   <li>From <strong>Apple</strong> we receive an identity token, your name and your email address. Apple sends the name and address <strong>only the first time</strong> you authorise Iris. If you chose “Hide My Email”, the address we receive is an Apple relay address and not your own. Sign in with Apple works on Android as well as on iPhone.</li>
   <li>From <strong>Google</strong> we receive an identity token, your email address and the web address of your Google profile picture.</li>
@@ -181,7 +181,7 @@
 <p>Iris does not sell personal data, show ads, or track you across other apps and websites. We record limited onboarding diagnostics under your account: steps such as starting, choosing a habit or goal, viewing an offer, continuing free, purchasing or saving an account, with timestamps and whether the account is a guest. These records contain no chat text and are removed with the account. RevenueCat subscription information and server security logs are separate. There is no third-party advertising or crash-reporting SDK. We keep at most 200 of these onboarding event records per account.</p>
 
 <h2><span class="n">4</span>What other people can see</h2>
-<p><strong>Your profile record can be read by any signed-in Iris account.</strong> This is not an oversight — it is what allows another person to find you by username and send you a friend request. That record holds your username, display name, biography, the address of your profile picture, the date you joined, and your visibility settings.</p>
+<p><strong>Your profile record can be read by any registered or saved Iris account. Guest accounts can read only their own profile.</strong> This is not an oversight — it is what allows another person to find you by username and send you a friend request. That record holds your username, display name, biography, the address of your profile picture, the date you joined, and your visibility settings.</p>
 <p>The application gives you three settings — for your <strong>name</strong>, your <strong>biography</strong> and your <strong>profile picture</strong> — each with the choices <em>Everyone</em>, <em>Friends</em> and <em>No one</em>. Both applications obey all three wherever a person is shown, and our server obeys the name setting when it composes the text of a notification. The picture setting is enforced additionally at the storage layer, so a picture set to <em>No one</em> cannot be retrieved at all. The name and biography settings govern how the applications present those two fields, which sit on the record described above.</p>
 <p><strong>Friends.</strong> Sending a friend request writes your username, display name and picture address into the other person’s account and sends a notification to their device. Your own list of friends can be read by you alone. Blocking someone removes you from each other’s friend list; neither application tells them, though the record of the block is held in their account.</p>
 <div class="note">
@@ -301,7 +301,7 @@
 
 <h2><span class="n">2</span>Inicio de sesión</h2>
 
-<p>Puedes empezar en Iris como invitado sin proporcionar un correo electrónico. Firebase crea un identificador de cuenta anónima para vincular contigo tu configuración, hábitos, metas y entrenamiento opcional. Ser invitado no significa que los datos permanezcan sin conexión. Puedes continuar con el seguimiento gratuito. Guardar tu cuenta con Apple o Google es opcional.</p>
+<p>En las versiones que ofrecen acceso de invitado, puedes empezar en Iris como invitado sin proporcionar un correo electrónico. Firebase crea un identificador de cuenta anónima para vincular contigo tu configuración, hábitos, metas y entrenamiento opcional. Ser invitado no significa que los datos permanezcan sin conexión. Puedes continuar con el seguimiento gratuito. Guardar tu cuenta con Apple o Google es opcional.</p>
 <ul>
   <li>De <strong>Apple</strong> recibimos un token de identidad, su nombre y su dirección de correo electrónico. Apple envía el nombre y la dirección <strong>solo la primera vez</strong> que usted autoriza Iris. Si eligió «Ocultar mi correo electrónico», la dirección que recibimos es una dirección de reenvío de Apple y no la suya. Iniciar sesión con Apple funciona tanto en Android como en iPhone.</li>
   <li>De <strong>Google</strong> recibimos un token de identidad, su dirección de correo electrónico y la dirección web de su foto de perfil de Google.</li>
@@ -328,7 +328,7 @@
 <p>Iris no vende datos personales, no muestra anuncios y no te rastrea entre otras aplicaciones o sitios. Guardamos diagnósticos limitados de la introducción en tu cuenta: empezar, elegir hábito o meta, ver una oferta, continuar gratis, comprar o guardar la cuenta, con fecha y condición de invitado. No contienen texto del chat y se eliminan con la cuenta. La información de RevenueCat y los registros de seguridad son independientes. No hay un SDK externo de publicidad ni de informes de fallos. Conservamos como máximo 200 registros de estos eventos iniciales por cuenta.</p>
 
 <h2><span class="n">4</span>Qué pueden ver otras personas</h2>
-<p><strong>Su registro de perfil puede ser leído por cualquier cuenta de Iris con sesión iniciada.</strong> Esto no es un descuido: es lo que permite que otra persona lo encuentre por su nombre de usuario y le envíe una solicitud de amistad. Ese registro contiene su nombre de usuario, su nombre visible, su biografía, la dirección de su foto de perfil, la fecha en que se registró y sus ajustes de visibilidad.</p>
+<p><strong>Su registro de perfil puede ser leído por cualquier cuenta de Iris registrada o guardada. Las cuentas de invitado solo pueden leer su propio perfil.</strong> Esto no es un descuido: es lo que permite que otra persona lo encuentre por su nombre de usuario y le envíe una solicitud de amistad. Ese registro contiene su nombre de usuario, su nombre visible, su biografía, la dirección de su foto de perfil, la fecha en que se registró y sus ajustes de visibilidad.</p>
 <p>La aplicación le ofrece tres ajustes —para su <strong>nombre</strong>, su <strong>biografía</strong> y su <strong>foto de perfil</strong>— cada uno con las opciones <em>Todos</em>, <em>Amigos</em> y <em>Nadie</em>. Ambas aplicaciones respetan los tres en todo lugar donde se muestre una persona, y nuestro servidor respeta el ajuste del nombre cuando redacta el texto de una notificación. El ajuste de la foto se aplica además en la capa de almacenamiento, de modo que una foto configurada como <em>Nadie</em> no puede recuperarse en absoluto. Los ajustes de nombre y biografía rigen cómo presentan las aplicaciones esos dos campos, que residen en el registro descrito arriba.</p>
 <p><strong>Amigos.</strong> Enviar una solicitud de amistad escribe su nombre de usuario, su nombre visible y la dirección de su foto en la cuenta de la otra persona, y envía una notificación a su dispositivo. Su propia lista de amigos solo puede leerla usted. Bloquear a alguien los retira mutuamente de sus listas de amigos; ninguna de las dos aplicaciones se lo comunica, aunque el registro del bloqueo se conserva en su cuenta.</p>
 <div class="note">
@@ -448,7 +448,7 @@
 
 <h2><span class="n">2</span>Iniciar sessão</h2>
 
-<p>Você pode começar no Iris como convidado sem informar um e-mail. O Firebase cria um identificador de conta anônima para associar a você a configuração, os hábitos, as metas e o acompanhamento opcional. Ser convidado não significa que os dados fiquem offline. Você pode continuar com o acompanhamento gratuito de hábitos. Salvar a conta com Apple ou Google é opcional.</p>
+<p>Nas versões que oferecem acesso de convidado, você pode começar no Iris como convidado sem informar um e-mail. O Firebase cria um identificador de conta anônima para associar a você a configuração, os hábitos, as metas e o acompanhamento opcional. Ser convidado não significa que os dados fiquem offline. Você pode continuar com o acompanhamento gratuito de hábitos. Salvar a conta com Apple ou Google é opcional.</p>
 <ul>
   <li>Da <strong>Apple</strong> recebemos um token de identidade, o seu nome e o seu endereço de e-mail. A Apple envia o nome e o endereço <strong>apenas na primeira vez</strong> que autoriza o Iris. Se escolheu «Ocultar o meu e-mail», o endereço que recebemos é um endereço de encaminhamento da Apple e não o seu. Iniciar sessão com a Apple funciona tanto em Android como em iPhone.</li>
   <li>Da <strong>Google</strong> recebemos um token de identidade, o seu endereço de e-mail e o endereço web da sua fotografia de perfil da Google.</li>
@@ -475,7 +475,7 @@
 <p>O Iris não vende dados pessoais, não exibe anúncios nem rastreia você em outros aplicativos e sites. Registramos diagnósticos limitados da introdução na sua conta: iniciar, escolher hábito ou meta, ver uma oferta, continuar gratuitamente, comprar ou salvar a conta, com horário e indicação de convidado. Não contêm texto do chat e são excluídos com a conta. As informações da RevenueCat e os registros de segurança são separados. Não há SDK externo de publicidade ou de relatórios de falhas. Guardamos no máximo 200 registros desses eventos de introdução por conta.</p>
 
 <h2><span class="n">4</span>O que outras pessoas podem ver</h2>
-<p><strong>O seu registo de perfil pode ser lido por qualquer conta Iris com sessão iniciada.</strong> Não é um descuido: é o que permite que outra pessoa o encontre pelo nome de utilizador e lhe envie um pedido de amizade. Esse registo contém o seu nome de utilizador, o nome visível, a biografia, o endereço da sua fotografia de perfil, a data de inscrição e as suas definições de visibilidade.</p>
+<p><strong>O seu registo de perfil pode ser lido por qualquer conta Iris registada ou guardada. As contas de convidado só podem ler o próprio perfil.</strong> Não é um descuido: é o que permite que outra pessoa o encontre pelo nome de utilizador e lhe envie um pedido de amizade. Esse registo contém o seu nome de utilizador, o nome visível, a biografia, o endereço da sua fotografia de perfil, a data de inscrição e as suas definições de visibilidade.</p>
 <p>A aplicação oferece-lhe três definições — para o seu <strong>nome</strong>, a sua <strong>biografia</strong> e a sua <strong>fotografia de perfil</strong> — cada uma com as opções <em>Todos</em>, <em>Amigos</em> e <em>Ninguém</em>. Ambas as aplicações respeitam as três em todos os lugares onde uma pessoa é apresentada, e o nosso servidor respeita a definição do nome quando compõe o texto de uma notificação. A definição da fotografia é aplicada adicionalmente na camada de armazenamento, pelo que uma fotografia definida como <em>Ninguém</em> não pode ser obtida de forma alguma. As definições de nome e biografia regem a forma como as aplicações apresentam esses dois campos, que residem no registo descrito acima.</p>
 <p><strong>Amigos.</strong> Enviar um pedido de amizade escreve o seu nome de utilizador, o nome visível e o endereço da fotografia na conta da outra pessoa, e envia uma notificação para o dispositivo dela. A sua própria lista de amigos só pode ser lida por si. Bloquear alguém retira-os mutuamente das listas de amigos; nenhuma das aplicações o comunica, embora o registo do bloqueio seja conservado na conta dessa pessoa.</p>
 <div class="note">
@@ -595,7 +595,7 @@
 
 <h2><span class="n">2</span>La connexion</h2>
 
-<p>Vous pouvez commencer Iris en mode invité sans fournir d’adresse e-mail. Firebase crée un identifiant anonyme auquel sont rattachés votre configuration, vos habitudes, vos objectifs et le coaching facultatif. Invité ne signifie pas hors ligne. Vous pouvez poursuivre le suivi gratuit. Enregistrer votre compte avec Apple ou Google est facultatif.</p>
+<p>Dans les versions proposant le mode invité, vous pouvez commencer Iris sans fournir d’adresse e-mail. Firebase crée un identifiant anonyme auquel sont rattachés votre configuration, vos habitudes, vos objectifs et le coaching facultatif. Invité ne signifie pas hors ligne. Vous pouvez poursuivre le suivi gratuit. Enregistrer votre compte avec Apple ou Google est facultatif.</p>
 <ul>
   <li>D'<strong>Apple</strong> nous recevons un jeton d'identité, votre nom et votre adresse électronique. Apple n'envoie le nom et l'adresse <strong>que la première fois</strong> où vous autorisez Iris. Si vous avez choisi « Masquer mon adresse e-mail », l'adresse que nous recevons est une adresse relais d'Apple et non la vôtre. Se connecter avec Apple fonctionne sur Android comme sur iPhone.</li>
   <li>De <strong>Google</strong> nous recevons un jeton d'identité, votre adresse électronique et l'adresse web de votre photo de profil Google.</li>
@@ -622,7 +622,7 @@
 <p>Iris ne vend pas de données personnelles, ne diffuse pas de publicité et ne vous suit pas entre applications et sites. Des diagnostics limités de l’introduction sont enregistrés dans votre compte : démarrage, choix d’habitude ou d’objectif, offre consultée, poursuite gratuite, achat ou enregistrement du compte, avec date et statut invité. Aucun texte de conversation ; ils sont supprimés avec le compte. Les données RevenueCat et journaux de sécurité sont distincts. Aucun SDK tiers de publicité ni de rapports de plantage. Nous conservons au maximum 200 de ces événements d’introduction par compte.</p>
 
 <h2><span class="n">4</span>Ce que d'autres personnes peuvent voir</h2>
-<p><strong>Votre fiche de profil peut être lue par tout compte Iris connecté.</strong> Ce n'est pas une négligence : c'est ce qui permet à une autre personne de vous trouver par votre nom d'utilisateur et de vous envoyer une demande d'ami. Cette fiche contient votre nom d'utilisateur, votre nom affiché, votre biographie, l'adresse de votre photo de profil, la date de votre inscription et vos réglages de visibilité.</p>
+<p><strong>Votre fiche de profil peut être lue par tout compte Iris inscrit ou enregistré. Un compte invité peut uniquement lire son propre profil.</strong> Ce n'est pas une négligence : c'est ce qui permet à une autre personne de vous trouver par votre nom d'utilisateur et de vous envoyer une demande d'ami. Cette fiche contient votre nom d'utilisateur, votre nom affiché, votre biographie, l'adresse de votre photo de profil, la date de votre inscription et vos réglages de visibilité.</p>
 <p>L'application vous offre trois réglages — pour votre <strong>nom</strong>, votre <strong>biographie</strong> et votre <strong>photo de profil</strong> — chacun avec les choix <em>Tout le monde</em>, <em>Amis</em> et <em>Personne</em>. Les deux applications respectent les trois partout où une personne est présentée, et notre serveur respecte le réglage du nom lorsqu'il compose le texte d'une notification. Le réglage de la photo est en outre appliqué à la couche de stockage, de sorte qu'une photo réglée sur <em>Personne</em> ne peut être obtenue d'aucune manière. Les réglages du nom et de la biographie régissent la façon dont les applications présentent ces deux champs, qui figurent dans la fiche décrite ci-dessus.</p>
 <p><strong>Amis.</strong> Envoyer une demande d'ami inscrit votre nom d'utilisateur, votre nom affiché et l'adresse de votre photo dans le compte de l'autre personne, et envoie une notification à son appareil. Votre propre liste d'amis ne peut être lue que par vous. Bloquer quelqu'un vous retire mutuellement de vos listes d'amis ; aucune des deux applications ne l'en informe, bien que la trace du blocage soit conservée dans son compte.</p>
 <div class="note">
@@ -742,7 +742,7 @@
 
 <h2><span class="n">2</span>Die Anmeldung</h2>
 
-<p>Du kannst Iris als Gast ohne E-Mail-Adresse starten. Firebase erstellt eine anonyme Kontokennung für deine Einrichtung, Gewohnheiten, Ziele und das optionale Coaching. Gast bedeutet nicht offline. Du kannst den kostenlosen Tracker weiter nutzen. Das Speichern mit Apple oder Google ist freiwillig.</p>
+<p>In Versionen mit Gastzugang kannst du Iris als Gast ohne E-Mail-Adresse starten. Firebase erstellt eine anonyme Kontokennung für deine Einrichtung, Gewohnheiten, Ziele und das optionale Coaching. Gast bedeutet nicht offline. Du kannst den kostenlosen Tracker weiter nutzen. Das Speichern mit Apple oder Google ist freiwillig.</p>
 <ul>
   <li>Von <strong>Apple</strong> erhalten wir ein Identitätstoken, Ihren Namen und Ihre E-Mail-Adresse. Apple übermittelt Name und Adresse <strong>nur beim ersten Mal</strong>, wenn Sie Iris autorisieren. Haben Sie „Meine E-Mail-Adresse verbergen“ gewählt, ist die Adresse, die wir erhalten, eine Weiterleitungsadresse von Apple und nicht Ihre eigene. Bei Apple anmelden funktioniert auf Android ebenso wie auf dem iPhone.</li>
   <li>Von <strong>Google</strong> erhalten wir ein Identitätstoken, Ihre E-Mail-Adresse und die Web-Adresse Ihres Google-Profilbildes.</li>
@@ -769,7 +769,7 @@
 <p>Iris verkauft keine persönlichen Daten, zeigt keine Werbung und verfolgt dich nicht über andere Apps und Websites. Begrenzte Einführungsdiagnosen werden unter deinem Konto gespeichert: Start, Wahl von Gewohnheit oder Ziel, Angebot, kostenloses Fortfahren, Kauf oder Kontospeicherung, mit Zeit und Gaststatus. Sie enthalten keinen Chattext und werden mit dem Konto gelöscht. RevenueCat-Daten und Sicherheitsprotokolle sind getrennt. Es gibt kein fremdes Werbe- oder Absturzbericht-SDK. Wir speichern höchstens 200 dieser Einführungsereignisse pro Konto.</p>
 
 <h2><span class="n">4</span>Was andere Personen sehen können</h2>
-<p><strong>Ihr Profildatensatz kann von jedem angemeldeten Iris-Konto gelesen werden.</strong> Das ist kein Versehen: es ist genau das, was es einer anderen Person erlaubt, Sie über Ihren Benutzernamen zu finden und Ihnen eine Freundschaftsanfrage zu senden. Dieser Datensatz enthält Ihren Benutzernamen, Ihren Anzeigenamen, Ihre Biografie, die Adresse Ihres Profilbildes, das Datum Ihrer Anmeldung und Ihre Sichtbarkeitseinstellungen.</p>
+<p><strong>Ihr Profildatensatz kann von jedem registrierten oder gespeicherten Iris-Konto gelesen werden. Gastkonten können nur ihr eigenes Profil lesen.</strong> Das ist kein Versehen: es ist genau das, was es einer anderen Person erlaubt, Sie über Ihren Benutzernamen zu finden und Ihnen eine Freundschaftsanfrage zu senden. Dieser Datensatz enthält Ihren Benutzernamen, Ihren Anzeigenamen, Ihre Biografie, die Adresse Ihres Profilbildes, das Datum Ihrer Anmeldung und Ihre Sichtbarkeitseinstellungen.</p>
 <p>Die Anwendung bietet Ihnen drei Einstellungen — für Ihren <strong>Namen</strong>, Ihre <strong>Biografie</strong> und Ihr <strong>Profilbild</strong> — jeweils mit den Optionen <em>Alle</em>, <em>Freunde</em> und <em>Niemand</em>. Beide Anwendungen beachten alle drei überall, wo eine Person dargestellt wird, und unser Server beachtet die Namenseinstellung, wenn er den Text einer Mitteilung verfasst. Die Bildeinstellung wird zusätzlich auf der Speicherebene durchgesetzt, sodass ein auf <em>Niemand</em> gestelltes Bild überhaupt nicht abgerufen werden kann. Die Einstellungen für Name und Biografie bestimmen, wie die Anwendungen diese beiden Felder darstellen; sie liegen in dem oben beschriebenen Datensatz.</p>
 <p><strong>Freunde.</strong> Eine Freundschaftsanfrage schreibt Ihren Benutzernamen, Ihren Anzeigenamen und die Adresse Ihres Bildes in das Konto der anderen Person und sendet eine Mitteilung an ihr Gerät. Ihre eigene Freundesliste kann nur von Ihnen gelesen werden. Wenn Sie jemanden blockieren, werden Sie beiderseits aus den Freundeslisten entfernt; keine der beiden Anwendungen teilt es der Person mit, doch der Eintrag über die Blockierung liegt in ihrem Konto.</p>
 <div class="note">
@@ -889,7 +889,7 @@
 
 <h2><span class="n">2</span>L'accesso</h2>
 
-<p>Puoi iniziare Iris come ospite senza fornire un’e-mail. Firebase crea un identificatore anonimo per configurazione, abitudini, obiettivi e coaching facoltativo. Ospite non significa offline. Puoi continuare con il monitoraggio gratuito. Salvare l’account con Apple o Google è facoltativo.</p>
+<p>Nelle versioni che offrono l’accesso ospite, puoi iniziare Iris come ospite senza fornire un’e-mail. Firebase crea un identificatore anonimo per configurazione, abitudini, obiettivi e coaching facoltativo. Ospite non significa offline. Puoi continuare con il monitoraggio gratuito. Salvare l’account con Apple o Google è facoltativo.</p>
 <ul>
   <li>Da <strong>Apple</strong> riceviamo un token di identità, il vostro nome e il vostro indirizzo di posta elettronica. Apple trasmette nome e indirizzo <strong>soltanto la prima volta</strong> che autorizzate Iris. Se avete scelto «Nascondi la mia e-mail», l'indirizzo che riceviamo è un indirizzo di inoltro di Apple e non il vostro. Accedi con Apple funziona su Android come su iPhone.</li>
   <li>Da <strong>Google</strong> riceviamo un token di identità, il vostro indirizzo di posta elettronica e l'indirizzo web della vostra immagine di profilo Google.</li>
@@ -916,7 +916,7 @@
 <p>Iris non vende dati personali, non mostra pubblicità e non ti segue tra altre app e siti. Conserviamo diagnostica limitata dell’introduzione nel tuo account: avvio, scelta di abitudine o obiettivo, offerta vista, continuazione gratuita, acquisto o salvataggio dell’account, con orario e stato ospite. Non contiene chat ed è eliminata con l’account. Dati RevenueCat e registri di sicurezza sono separati. Non vi sono SDK esterni pubblicitari o di segnalazione arresti anomali. Conserviamo al massimo 200 di questi eventi introduttivi per account.</p>
 
 <h2><span class="n">4</span>Cosa possono vedere le altre persone</h2>
-<p><strong>La vostra scheda di profilo può essere letta da qualunque account Iris connesso.</strong> Non è una svista: è ciò che permette a un'altra persona di trovarvi per nome utente e inviarvi una richiesta di amicizia. Quella scheda contiene il vostro nome utente, il nome visualizzato, la biografia, l'indirizzo della vostra immagine di profilo, la data di iscrizione e le vostre impostazioni di visibilità.</p>
+<p><strong>La vostra scheda di profilo può essere letta da qualunque account Iris registrato o salvato. Gli account ospite possono leggere solo il proprio profilo.</strong> Non è una svista: è ciò che permette a un'altra persona di trovarvi per nome utente e inviarvi una richiesta di amicizia. Quella scheda contiene il vostro nome utente, il nome visualizzato, la biografia, l'indirizzo della vostra immagine di profilo, la data di iscrizione e le vostre impostazioni di visibilità.</p>
 <p>L'applicazione vi offre tre impostazioni — per il vostro <strong>nome</strong>, la vostra <strong>biografia</strong> e la vostra <strong>immagine di profilo</strong> — ciascuna con le opzioni <em>Tutti</em>, <em>Amici</em> e <em>Nessuno</em>. Entrambe le applicazioni le rispettano tutte e tre in ogni luogo in cui una persona è mostrata, e il nostro server rispetta l'impostazione del nome quando compone il testo di una notifica. L'impostazione dell'immagine è applicata inoltre allo strato di archiviazione, così che un'immagine impostata su <em>Nessuno</em> non possa essere recuperata in alcun modo. Le impostazioni di nome e biografia governano il modo in cui le applicazioni presentano quei due campi, che risiedono nella scheda descritta sopra.</p>
 <p><strong>Amici.</strong> Inviare una richiesta di amicizia scrive il vostro nome utente, il nome visualizzato e l'indirizzo della vostra immagine nell'account dell'altra persona, e invia una notifica al suo dispositivo. Il vostro elenco di amici può essere letto soltanto da voi. Bloccare qualcuno vi rimuove reciprocamente dagli elenchi di amici; nessuna delle due applicazioni gliene dà avviso, sebbene la traccia del blocco sia conservata nel suo account.</p>
 <div class="note">
@@ -1036,7 +1036,7 @@
 
 <h2><span class="n">2</span>サインイン</h2>
 
-<p>メールアドレスを入力せず、ゲストとしてIrisを始められます。Firebaseは匿名のアカウントIDを作成し、設定、習慣、目標、任意のコーチングを関連付けます。ゲストでもデータが端末内だけに保存されるわけではありません。無料の記録機能を引き続き使えます。AppleまたはGoogleでアカウントを保存するかどうかは任意です。</p>
+<p>ゲスト利用を提供するバージョンでは、メールアドレスを入力せず、ゲストとして Iris を始められます。Firebaseは匿名のアカウントIDを作成し、設定、習慣、目標、任意のコーチングを関連付けます。ゲストでもデータが端末内だけに保存されるわけではありません。無料の記録機能を引き続き使えます。AppleまたはGoogleでアカウントを保存するかどうかは任意です。</p>
 <ul>
   <li><strong>Apple</strong> からは、識別トークン、利用者の氏名および電子メールアドレスを受領します。Apple が氏名と電子メールアドレスを送信するのは、利用者が Iris を<strong>最初に承認したときのみ</strong>です。「メールを非公開」を選択した場合、当方が受領するアドレスは Apple の転送用アドレスであり、利用者ご自身のアドレスではありません。Apple でサインインは、iPhone と同様に Android でも機能します。</li>
   <li><strong>Google</strong> からは、識別トークン、利用者の電子メールアドレス、および Google のプロフィール画像のアドレスを受領します。</li>
@@ -1063,7 +1063,7 @@
 <p>Irisは個人情報を販売せず、広告を表示せず、他のアプリやサイトをまたいで追跡しません。開始、習慣・目標の選択、プラン閲覧、無料での継続、購入、アカウント保存など、導入時の限定的な診断情報を日時とゲスト状態とともにアカウントに記録します。チャット本文は含まず、アカウントとともに削除します。RevenueCatの購読情報とセキュリティログは別です。外部の広告・クラッシュ報告SDKはありません。 これらの初期設定イベント記録は、アカウントごとに最大200件保持します。</p>
 
 <h2><span class="n">4</span>他の利用者が見ることのできるもの</h2>
-<p><strong>利用者のプロフィールレコードは、サインインしたすべての Iris アカウントが読み取ることができます。</strong>これは不具合ではなく、他の利用者がユーザー名で利用者を検索し、フレンド申請を送ることを可能にしている仕組みです。当該レコードには、ユーザー名、表示名、自己紹介、プロフィール画像のアドレス、参加日、および公開設定が含まれます。</p>
+<p><strong>利用者のプロフィールレコードは、登録済みまたは保存済みの Iris アカウントが読み取ることができます。ゲストアカウントは自分のプロフィールだけを読み取れます。</strong>これは不具合ではなく、他の利用者がユーザー名で利用者を検索し、フレンド申請を送ることを可能にしている仕組みです。当該レコードには、ユーザー名、表示名、自己紹介、プロフィール画像のアドレス、参加日、および公開設定が含まれます。</p>
 <p>本アプリケーションは、<strong>氏名</strong>、<strong>自己紹介</strong>、<strong>プロフィール画像</strong>のそれぞれについて、<em>全員</em>・<em>フレンド</em>・<em>非公開</em>の三つの設定を提供します。両アプリケーションは、人物が表示されるあらゆる箇所でこの三つの設定に従い、当方サーバーも通知文を作成する際に氏名の設定に従います。画像の設定はさらに保存層でも適用されるため、<em>非公開</em>に設定された画像はいかなる方法でも取得できません。氏名と自己紹介の設定は、上記レコードに存在するこの二つの項目を各アプリケーションがどのように表示するかを制御するものです。</p>
 <p><strong>フレンド。</strong>フレンド申請を送信すると、利用者のユーザー名、表示名および画像のアドレスが相手のアカウントに書き込まれ、相手の端末に通知が送られます。利用者のフレンド一覧は利用者本人のみが読み取ることができます。ブロックは双方のフレンド一覧から相互に削除しますが、いずれのアプリケーションも相手に通知しません。ただしブロックの記録は相手のアカウントに保存されます。</p>
 <div class="note">
@@ -1183,7 +1183,7 @@
 
 <h2><span class="n">2</span>로그인</h2>
 
-<p>이메일 없이 게스트로 Iris를 시작할 수 있습니다. Firebase는 설정, 습관, 목표와 선택적 코칭을 연결하는 익명 계정 ID를 만듭니다. 게스트라고 해서 데이터가 기기에만 저장되는 것은 아닙니다. 무료 기록 기능을 계속 사용할 수 있으며 Apple 또는 Google로 계정을 저장하는 것은 선택 사항입니다.</p>
+<p>게스트 이용을 제공하는 버전에서는 이메일 주소 없이 게스트로 Iris를 시작할 수 있습니다. Firebase는 설정, 습관, 목표와 선택적 코칭을 연결하는 익명 계정 ID를 만듭니다. 게스트라고 해서 데이터가 기기에만 저장되는 것은 아닙니다. 무료 기록 기능을 계속 사용할 수 있으며 Apple 또는 Google로 계정을 저장하는 것은 선택 사항입니다.</p>
 <ul>
   <li><strong>Apple</strong>로부터 신원 토큰, 이용자의 이름, 이용자의 이메일 주소를 받습니다. Apple은 이름과 이메일 주소를 이용자가 Iris를 <strong>처음 승인할 때에만</strong> 전달합니다. "나의 이메일 가리기"를 선택한 경우 저희가 받는 주소는 Apple의 전달용 주소이며 이용자 본인의 주소가 아닙니다. Apple로 로그인은 iPhone에서와 마찬가지로 Android에서도 작동합니다.</li>
   <li><strong>Google</strong>로부터 신원 토큰, 이용자의 이메일 주소, 그리고 Google 프로필 사진의 주소를 받습니다.</li>
@@ -1210,7 +1210,7 @@
 <p>Iris는 개인정보를 판매하거나 광고를 표시하지 않으며 다른 앱과 사이트에 걸쳐 추적하지 않습니다. 시작, 습관·목표 선택, 상품 보기, 무료 계속, 구매, 계정 저장 등 제한된 시작 과정 진단을 시간 및 게스트 여부와 함께 계정에 기록합니다. 채팅 내용은 포함하지 않으며 계정과 함께 삭제합니다. RevenueCat 구독 정보와 보안 로그는 별도입니다. 외부 광고 또는 충돌 보고 SDK는 없습니다. 이러한 시작 이벤트 기록은 계정당 최대 200개 보관합니다.</p>
 
 <h2><span class="n">4</span>다른 사람이 볼 수 있는 것</h2>
-<p><strong>이용자의 프로필 레코드는 로그인한 모든 Iris 계정이 읽을 수 있습니다.</strong> 이는 결함이 아니라, 다른 사람이 사용자 이름으로 이용자를 찾아 친구 요청을 보낼 수 있게 하는 바로 그 구조입니다. 이 레코드에는 사용자 이름, 표시 이름, 소개, 프로필 사진의 주소, 가입일, 공개 설정이 담깁니다.</p>
+<p><strong>이용자의 프로필 레코드는 등록되거나 저장된 Iris 계정이 읽을 수 있습니다. 게스트 계정은 자신의 프로필만 읽을 수 있습니다.</strong> 이는 결함이 아니라, 다른 사람이 사용자 이름으로 이용자를 찾아 친구 요청을 보낼 수 있게 하는 바로 그 구조입니다. 이 레코드에는 사용자 이름, 표시 이름, 소개, 프로필 사진의 주소, 가입일, 공개 설정이 담깁니다.</p>
 <p>애플리케이션은 <strong>이름</strong>, <strong>소개</strong>, <strong>프로필 사진</strong> 각각에 대하여 <em>모두</em>, <em>친구</em>, <em>아무도</em>의 세 가지 설정을 제공합니다. 두 애플리케이션 모두 사람이 표시되는 모든 곳에서 이 세 설정을 따르며, 저희 서버도 알림 문구를 작성할 때 이름 설정을 따릅니다. 사진 설정은 저장 계층에서도 적용되므로 <em>아무도</em>로 설정된 사진은 어떤 방법으로도 가져올 수 없습니다. 이름과 소개 설정은 위 레코드에 담긴 그 두 항목을 각 애플리케이션이 어떻게 보여주는지를 통제합니다.</p>
 <p><strong>친구.</strong> 친구 요청을 보내면 이용자의 사용자 이름, 표시 이름, 사진 주소가 상대방의 계정에 기록되고 상대방의 기기로 알림이 전송됩니다. 이용자의 친구 목록은 이용자 본인만 읽을 수 있습니다. 차단은 양쪽 친구 목록에서 서로를 제거하며, 두 애플리케이션 모두 상대방에게 알리지 않습니다. 다만 차단 기록은 상대방의 계정에 보관됩니다.</p>
 <div class="note">
@@ -1330,7 +1330,7 @@
 
 <h2><span class="n">2</span>登录</h2>
 
-<p>你可以不提供电子邮件，以访客身份开始使用 Iris。Firebase 会创建匿名账户标识，将设置、习惯、目标和可选的指导服务与你关联。访客不代表数据只保存在本地。你可以继续免费记录习惯。通过 Apple 或 Google 保存账户是可选的。</p>
+<p>在提供访客入口的版本中，你可以不提供电子邮件，以访客身份开始使用 Iris。Firebase 会创建匿名账户标识，将设置、习惯、目标和可选的指导服务与你关联。访客不代表数据只保存在本地。你可以继续免费记录习惯。通过 Apple 或 Google 保存账户是可选的。</p>
 <ul>
   <li>我们从 <strong>Apple</strong> 处接收一个身份令牌、您的姓名和您的电子邮箱地址。Apple <strong>仅在您首次授权</strong> Iris 时发送姓名和邮箱。若您选择了"隐藏我的邮件地址",我们收到的是 Apple 的转发地址,而非您本人的地址。使用 Apple 登录在 Android 上与在 iPhone 上同样可用。</li>
   <li>我们从 <strong>Google</strong> 处接收一个身份令牌、您的电子邮箱地址,以及您 Google 头像的网址。</li>
@@ -1357,7 +1357,7 @@
 <p>Iris 不出售个人数据，不显示广告，也不跨应用或网站追踪你。我们在账户中记录有限的入门诊断：开始、选择习惯或目标、查看套餐、免费继续、购买或保存账户，以及时间和访客状态。不包含聊天文本，并随账户删除。RevenueCat 订阅资料与安全日志另行处理。没有第三方广告或崩溃报告 SDK。 每个账户最多保留200条此类入门事件记录。</p>
 
 <h2><span class="n">4</span>其他人能看到什么</h2>
-<p><strong>您的资料记录可被任何已登录的 Iris 账户读取。</strong>这并非疏漏,而正是使他人能够按用户名找到您并向您发送好友请求的机制。该记录包含您的用户名、显示名称、简介、头像地址、加入日期以及您的可见性设置。</p>
+<p><strong>您的资料记录可被任何已注册或已保存的 Iris 账户读取。访客账户只能读取自己的资料。</strong>这并非疏漏,而正是使他人能够按用户名找到您并向您发送好友请求的机制。该记录包含您的用户名、显示名称、简介、头像地址、加入日期以及您的可见性设置。</p>
 <p>本应用程序为您的<strong>姓名</strong>、<strong>简介</strong>与<strong>头像</strong>各提供三项设置:<em>所有人</em>、<em>好友</em>与<em>任何人不可见</em>。两个应用程序在任何展示他人的位置都遵循这三项设置,我们的服务器在撰写通知文案时同样遵循姓名设置。头像设置还会在存储层予以执行,因此设置为<em>任何人不可见</em>的头像无法以任何方式取得。姓名与简介设置所约束的,是两个应用程序如何呈现上述记录中的这两个字段。</p>
 <p><strong>好友。</strong>发送好友请求会将您的用户名、显示名称与头像地址写入对方的账户,并向其设备发送一条通知。您的好友列表仅您本人可以读取。屏蔽会将双方从彼此的好友列表中移除;两个应用程序都不会告知对方,但屏蔽的记录会保存在对方的账户中。</p>
 <div class="note">
@@ -1477,7 +1477,7 @@
 
 <h2><span class="n">2</span>登入</h2>
 
-<p>你可以不提供電子郵件，以訪客身分開始使用 Iris。Firebase 會建立匿名帳戶識別碼，將設定、習慣、目標與選用的指導服務與你關聯。訪客不代表資料只保存在本機。你可以繼續免費記錄習慣。透過 Apple 或 Google 儲存帳戶是選用功能。</p>
+<p>在提供訪客入口的版本中，你可以不提供電子郵件，以訪客身分開始使用 Iris。Firebase 會建立匿名帳戶識別碼，將設定、習慣、目標與選用的指導服務與你關聯。訪客不代表資料只保存在本機。你可以繼續免費記錄習慣。透過 Apple 或 Google 儲存帳戶是選用功能。</p>
 <ul>
   <li>我們自 <strong>Apple</strong> 接收一組身分權杖、您的姓名與您的電子郵件地址。Apple <strong>僅在您首次授權</strong> Iris 時傳送姓名與電子郵件。若您選擇了「隱藏我的電子郵件」,我們收到的是 Apple 的轉寄地址,而非您本人的地址。使用 Apple 登入在 Android 上與在 iPhone 上同樣可用。</li>
   <li>我們自 <strong>Google</strong> 接收一組身分權杖、您的電子郵件地址,以及您 Google 大頭貼的網址。</li>
@@ -1504,7 +1504,7 @@
 <p>Iris 不出售個人資料、不顯示廣告，也不跨應用程式或網站追蹤你。我們在帳戶中記錄有限的入門診斷：開始、選擇習慣或目標、查看方案、免費繼續、購買或儲存帳戶，以及時間與訪客狀態。不包含聊天文字，並隨帳戶刪除。RevenueCat 訂閱資料與安全日誌另行處理。沒有第三方廣告或當機報告 SDK。 每個帳戶最多保留200筆此類入門事件紀錄。</p>
 
 <h2><span class="n">4</span>其他人能看到什麼</h2>
-<p><strong>您的個人資料紀錄可由任何已登入的 Iris 帳號讀取。</strong>這並非疏漏,而正是讓他人能夠依使用者名稱找到您並向您送出好友邀請的機制。該紀錄包含您的使用者名稱、顯示名稱、簡介、大頭貼位址、加入日期以及您的可見性設定。</p>
+<p><strong>您的個人資料紀錄可由任何已註冊或已儲存的 Iris 帳號讀取。訪客帳號只能讀取自己的個人資料。</strong>這並非疏漏,而正是讓他人能夠依使用者名稱找到您並向您送出好友邀請的機制。該紀錄包含您的使用者名稱、顯示名稱、簡介、大頭貼位址、加入日期以及您的可見性設定。</p>
 <p>本應用程式為您的<strong>姓名</strong>、<strong>簡介</strong>與<strong>大頭貼</strong>各提供三項設定:<em>所有人</em>、<em>好友</em>與<em>任何人皆不可見</em>。兩個應用程式在任何顯示他人的位置皆遵循這三項設定,我們的伺服器在撰寫通知文字時同樣遵循姓名設定。大頭貼設定另會在儲存層予以執行,因此設定為<em>任何人皆不可見</em>的大頭貼無法以任何方式取得。姓名與簡介設定所約束的,是兩個應用程式如何呈現上述紀錄中的這兩個欄位。</p>
 <p><strong>好友。</strong>送出好友邀請會將您的使用者名稱、顯示名稱與大頭貼位址寫入對方的帳號,並向其裝置送出一則通知。您的好友清單僅您本人可以讀取。封鎖會將雙方自彼此的好友清單中移除;兩個應用程式都不會告知對方,但封鎖的紀錄會保存在對方的帳號中。</p>
 <div class="note">
