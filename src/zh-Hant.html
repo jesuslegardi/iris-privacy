@@ -1,6 +1,6 @@
 <article lang="zh-Hant" data-lang="zh-Hant">
 <h1>隱私權政策</h1>
-<p class="effective">Iris · 2026年10月1日</p>
+<p class="effective">Iris · 2026年10月12日</p>
 
 <h2><span class="n">1</span>本政策的適用範圍</h2>
 <p>本政策說明應用程式 Iris 蒐集哪些個人資料、用於何種目的、由誰接收、保存多久,以及您可以向我們主張什麼。本政策適用於 iPhone 版 Iris、Android 版 Iris,以及支撐兩者運作的伺服器,不適用於其他任何事物。</p>
@@ -70,13 +70,13 @@
 
 <h2><span class="n">8</span>誰會接收您的資料</h2>
 
-<p>共六家公司。每一家均依我們的指示,為所載明的目的行事。</p>
+<p>下文列出目前及以前的資料接收方。各方均依照我們的指示，為所列目的處理資料。</p>
 <h3>Google LLC</h3>
-<p>最主要的接收方,並承擔多個彼此不同的角色:Firebase Authentication 持有您的登入與電子郵件地址;Cloud Firestore 是保存第 3 條中除電子郵件地址以外全部內容的儲存庫;Cloud Storage 持有您的大頭貼、競賽照片與快取的語音音訊;位於美國的 Cloud Functions 是我們的伺服器;Firebase Cloud Messaging 遞送通知;Firebase App Check 與 Firebase Installations 負責裝置證明與安裝識別碼;Google Sign-In,若您使用它;Gemini API,依第 6 條所述接收您的<strong>語音</strong>對話;Google Cloud Text-to-Speech,僅接收 Iris 的回覆;以及在 Android 上,由 Google Play 服務提供購買基礎架構、完整性證明與評分邀請。若您以 Google 登入且未更換大頭貼,其他人的手機會直接自 Google 的伺服器取得該影像。</p>
+<p>最主要的接收方,並承擔多個彼此不同的角色:Firebase Authentication 持有您的登入與電子郵件地址;Cloud Firestore 是保存第 3 條中除電子郵件地址以外全部內容的儲存庫;Cloud Storage 持有您的大頭貼、競賽照片與快取的語音音訊;位於美國的 Cloud Functions 是我們的伺服器;Firebase Cloud Messaging 遞送通知;Firebase App Check 與 Firebase Installations 負責裝置證明與安裝識別碼;Google Sign-In,若您使用它;Gemini Developer API 以前接收語音對話的文字轉寫，目前不再接收新的AI請求;Google Cloud Text-to-Speech,僅接收 Iris 的回覆;以及在 Android 上,由 Google Play 服務提供購買基礎架構、完整性證明與評分邀請。若您以 Google 登入且未更換大頭貼,其他人的手機會直接自 Google 的伺服器取得該影像。</p>
 <h3>OpenAI, L.L.C.</h3>
-<p>您<strong>輸入</strong>的對話,以及第 6 條所述的摘要。對於您所輸入的大部分內容,OpenAI 是主要的提供方。</p>
+<p>OpenAI 以前接收輸入的對話及第6條所述的摘要。目前伺服器不再向 OpenAI 傳送新的AI請求。以前的請求仍涉及當時適用的處理與保留條件。</p>
 <h3>Anthropic PBC</h3>
-<p>與 OpenAI 相同的內容,用於其所負責的對話部分,以及在 OpenAI 無法使用時使用。此外另有一項:一份<strong>僅含您習慣名稱</strong>的清單會傳送至 Anthropic 以進行歸類。</p>
+<p>現在由 Anthropic 根據輸入的對話、語音對話的文字轉寫，以及第6條所述的相關內容產生回覆，也用於協助制定和管理目標。另外，會向 Anthropic 傳送<strong>僅含習慣名稱</strong>的清單，以便分類。</p>
 <h3>Apple Inc.</h3>
 <p>使用 Apple 登入,<strong>在 Android 上與在 iPhone 上同樣如此</strong>;Apple 推播通知服務,它是遞送至任何 iPhone 的每一則通知的最後一環;App Attest,用於裝置證明;以及 App Store,用於購買。</p>
 <h3>RevenueCat, Inc.</h3>
@@ -93,9 +93,9 @@
 <h2><span class="n">10</span>各模型以何訓練</h2>
 <p>我們未授權第 8 條中的任何公司以您傳送給 Iris 的內容訓練模型,而各公司亦聲明其不會如此:</p>
 <ul>
-  <li><strong>OpenAI</strong> 不使用透過其 API 提交的資料訓練其模型,並將濫用監控記錄保存最多三十天。</li>
+  <li>以前的請求：<strong>OpenAI</strong> 不使用透過其 API 提交的資料訓練其模型,並將濫用監控記錄保存最多三十天。</li>
   <li><strong>Anthropic</strong> 在預設情況下不使用其商用 API 的輸入與輸出訓練其模型,並聲明在預設情況下於三十天內自其系統中刪除。</li>
-  <li>在我們所使用的付費服務上,<strong>Google 的 Gemini API</strong> 不將請求與回應用於改進 Google 的產品;Google 僅為偵測其禁止用途政策的違反情形及履行法定義務,在有限期間內保存記錄。</li>
+  <li><strong>Google 的 Gemini Developer API</strong>曾用於以前的語音對話請求。新的AI請求不再使用該服務。以前的請求仍受傳送時適用的處理與保留條件約束。</li>
   <li><strong>Google Cloud Text-to-Speech</strong> 依與上述各項相區別的 Google Cloud 條款營運,依該條款,客戶資料不會用於訓練 Google 的模型。</li>
 </ul>
 <p>以上是各提供方自身的承諾,依我們據以持有帳號的付費商業條款作出。它們並非我們能夠代任何其他公司給出的保證;各提供方的現行條款始終優先適用。若此種安排發生變化,本條亦隨之修改。</p>

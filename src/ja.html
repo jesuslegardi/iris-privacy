@@ -1,6 +1,6 @@
 <article lang="ja" data-lang="ja">
 <h1>プライバシーポリシー</h1>
-<p class="effective">Iris · 2026年10月1日</p>
+<p class="effective">Iris · 2026年10月12日</p>
 
 <h2><span class="n">1</span>本ポリシーの適用範囲</h2>
 <p>本ポリシーは、アプリケーション Iris がどの個人データを取得し、何のために用い、誰がそれを受領し、どれだけの期間保存し、利用者が当方に対して何を求めうるかを定めるものです。本ポリシーは iPhone 版 Iris、Android 版 Iris、およびそれらを支えるサーバーに適用されます。それ以外のものには適用されません。</p>
@@ -70,13 +70,13 @@
 
 <h2><span class="n">8</span>データを受領する者</h2>
 
-<p>6社です。いずれも当方の指示に基づき、記載の目的のために行為します。</p>
+<p>現在と過去の受領者を以下に記載します。各社は記載する目的のために、当方の指示に従って行動します。</p>
 <h3>Google LLC</h3>
-<p>最大の受領者であり、複数の異なる役割を担います。Firebase Authentication は利用者のサインインと電子メールアドレスを保持します。Cloud Firestore は、電子メールアドレスを除く第3条のすべてを保持する保存領域です。Cloud Storage はプロフィール画像、コンペティション写真、およびキャッシュされた音声を保持します。米国の Cloud Functions が当方のサーバーです。Firebase Cloud Messaging が通知を配信します。Firebase App Check および Firebase Installations が端末の証明とインストール識別子を担います。Google Sign-In は利用者が用いる場合に限ります。Gemini API は第6条に記載のとおり<strong>音声による</strong>会話を受領します。Google Cloud Text-to-Speech は Iris の応答のみを受領します。Android では、Google Play サービスが購入基盤、完全性の証明、および評価依頼を担います。Google でサインインし、かつ画像を差し替えていない場合、他の利用者の端末は当該画像を Google のサーバーから直接取得します。</p>
+<p>最大の受領者であり、複数の異なる役割を担います。Firebase Authentication は利用者のサインインと電子メールアドレスを保持します。Cloud Firestore は、電子メールアドレスを除く第3条のすべてを保持する保存領域です。Cloud Storage はプロフィール画像、コンペティション写真、およびキャッシュされた音声を保持します。米国の Cloud Functions が当方のサーバーです。Firebase Cloud Messaging が通知を配信します。Firebase App Check および Firebase Installations が端末の証明とインストール識別子を担います。Google Sign-In は利用者が用いる場合に限ります。Gemini Developer API は以前、音声会話の文字起こしを受領していました。現在は新たなAIリクエストを受領しません。Google Cloud Text-to-Speech は Iris の応答のみを受領します。Android では、Google Play サービスが購入基盤、完全性の証明、および評価依頼を担います。Google でサインインし、かつ画像を差し替えていない場合、他の利用者の端末は当該画像を Google のサーバーから直接取得します。</p>
 <h3>OpenAI, L.L.C.</h3>
-<p>利用者が<strong>入力した</strong>会話および第6条に記載の要約。OpenAI は利用者が入力する内容の大部分についての主たる提供者です。</p>
+<p>OpenAI は以前、入力した会話と第6条に記載する要約を受領していました。現在のサーバーは新たなAIリクエストをOpenAIに送信しません。以前のリクエストには、引き続き該当する処理・保存条件が関係します。</p>
 <h3>Anthropic PBC</h3>
-<p>OpenAI と同一の内容を、Anthropic が担当する会話部分について、および OpenAI が利用できない場合に受領します。これとは別に、<strong>習慣の名称のみ</strong>を記載した一覧が、分類のために Anthropic に送信されます。</p>
+<p>現在は Anthropic が、入力した会話や音声会話の文字起こしと、第6条に記載する関連情報から応答を生成します。目標の作成や整理にも使用します。これとは別に、分類のために<strong>習慣の名称のみ</strong>の一覧を Anthropic に送信します。</p>
 <h3>Apple Inc.</h3>
 <p>Apple でサインイン(<strong>iPhone と同様に Android でも</strong>)、iPhone に配信されるすべての通知の最終経路となる Apple のプッシュ通知サービス、端末の証明のための App Attest、および購入のための App Store。</p>
 <h3>RevenueCat, Inc.</h3>
@@ -93,9 +93,9 @@
 <h2><span class="n">10</span>モデルの学習について</h2>
 <p>当方は、第8条の各社が Iris に送信された内容でモデルを学習させることを許諾しておらず、各社もこれを行わないと表明しています。</p>
 <ul>
-  <li><strong>OpenAI</strong> は、自社 API を通じて送信されたデータを自社モデルの学習に用いず、不正利用監視のためのログを最大30日間保存します。</li>
+  <li>以前のリクエスト：<strong>OpenAI</strong> は、自社 API を通じて送信されたデータを自社モデルの学習に用いず、不正利用監視のためのログを最大30日間保存します。</li>
   <li><strong>Anthropic</strong> は、既定において商用 API の入力および出力を自社モデルの学習に用いず、既定において30日以内に自社システムから削除すると表明しています。</li>
-  <li><strong>Google の Gemini API</strong> は、当方が利用する有償のサービスにおいて、要求および応答を Google 製品の改善に用いません。Google は、自社の禁止用途に係る方針違反の検出および法令上の義務の履行のために限り、限定された期間ログを保存します。</li>
+  <li><strong>Google の Gemini Developer API</strong> は以前の音声会話リクエストに使用されました。新たなAIリクエストには使用しません。以前のリクエストには、送信時に適用された処理・保存条件が引き続き適用されます。</li>
   <li><strong>Google Cloud Text-to-Speech</strong> は、上記とは別の Google Cloud の規約に基づき運用され、当該規約において顧客データは Google のモデルの学習に用いられません。</li>
 </ul>
 <p>これらは、当方がアカウントを保有する有償の事業者向け条件に基づく、各提供者自身の約定です。当方が他社に代わって差し出しうる保証ではなく、各提供者の現行の条件が適用されます。この状況が変わった場合、本条もそれに応じて改めます。</p>

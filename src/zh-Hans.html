@@ -1,6 +1,6 @@
 <article lang="zh-Hans" data-lang="zh-Hans">
 <h1>隐私政策</h1>
-<p class="effective">Iris · 2026年10月1日</p>
+<p class="effective">Iris · 2026年10月12日</p>
 
 <h2><span class="n">1</span>本政策的适用范围</h2>
 <p>本政策说明应用程序 Iris 收集哪些个人数据、用于何种目的、由谁接收、保存多久,以及您可以向我们主张什么。本政策适用于 iPhone 版 Iris、Android 版 Iris,以及支撑二者的服务器,不适用于其他任何事物。</p>
@@ -70,13 +70,13 @@
 
 <h2><span class="n">8</span>谁会接收您的数据</h2>
 
-<p>共六家公司。每一家均按我们的指示,为所载明的目的行事。</p>
+<p>下文列出当前及以前的数据接收方。各方均按照我们的指示，为所列目的处理数据。</p>
 <h3>Google LLC</h3>
-<p>最主要的接收方,并承担多个彼此不同的角色:Firebase Authentication 持有您的登录与邮箱地址;Cloud Firestore 是保存第 3 条中除邮箱地址以外全部内容的存储库;Cloud Storage 持有您的头像、竞赛照片与缓存的语音音频;位于美国的 Cloud Functions 是我们的服务器;Firebase Cloud Messaging 投递通知;Firebase App Check 与 Firebase Installations 负责设备证明与安装标识符;Google Sign-In,若您使用它;Gemini API,依第 6 条所述接收您的<strong>语音</strong>对话;Google Cloud Text-to-Speech,仅接收 Iris 的回复;以及在 Android 上,由 Google Play 服务提供购买基础设施、完整性证明与评分请求。若您以 Google 登录且未更换头像,其他人的手机会直接从 Google 的服务器取得该头像。</p>
+<p>最主要的接收方,并承担多个彼此不同的角色:Firebase Authentication 持有您的登录与邮箱地址;Cloud Firestore 是保存第 3 条中除邮箱地址以外全部内容的存储库;Cloud Storage 持有您的头像、竞赛照片与缓存的语音音频;位于美国的 Cloud Functions 是我们的服务器;Firebase Cloud Messaging 投递通知;Firebase App Check 与 Firebase Installations 负责设备证明与安装标识符;Google Sign-In,若您使用它;Gemini Developer API 以前接收语音对话的文字转写，现在不再接收新的AI请求;Google Cloud Text-to-Speech,仅接收 Iris 的回复;以及在 Android 上,由 Google Play 服务提供购买基础设施、完整性证明与评分请求。若您以 Google 登录且未更换头像,其他人的手机会直接从 Google 的服务器取得该头像。</p>
 <h3>OpenAI, L.L.C.</h3>
-<p>您<strong>输入</strong>的对话,以及第 6 条所述的摘要。对于您所输入的大部分内容,OpenAI 是主要的提供方。</p>
+<p>OpenAI 以前接收输入的对话及第6条所述的摘要。当前服务器不再向 OpenAI 发送新的AI请求。以前的请求仍涉及当时适用的处理和保留条件。</p>
 <h3>Anthropic PBC</h3>
-<p>与 OpenAI 相同的内容,用于其所负责的对话部分,以及在 OpenAI 不可用时使用。此外单独地,一份<strong>仅含您习惯名称</strong>的列表会发送至 Anthropic 以进行归类。</p>
+<p>现在由 Anthropic 根据输入的对话、语音对话的文字转写以及第6条所述的相关内容生成回复，也用于帮助制定和管理目标。另外，会向 Anthropic 发送<strong>仅含习惯名称</strong>的列表，以便分类。</p>
 <h3>Apple Inc.</h3>
 <p>使用 Apple 登录,<strong>在 Android 上与在 iPhone 上同样如此</strong>;Apple 推送通知服务,它是投递至任何 iPhone 的每一条通知的最后一环;App Attest,用于设备证明;以及 App Store,用于购买。</p>
 <h3>RevenueCat, Inc.</h3>
@@ -93,9 +93,9 @@
 <h2><span class="n">10</span>各模型以何训练</h2>
 <p>我们未授权第 8 条中的任何公司以您发送给 Iris 的内容训练模型,而各公司亦声明其不会如此:</p>
 <ul>
-  <li><strong>OpenAI</strong> 不使用通过其 API 提交的数据训练其模型,并将滥用监控日志保存最多三十天。</li>
+  <li>以前的请求：<strong>OpenAI</strong> 不使用通过其 API 提交的数据训练其模型,并将滥用监控日志保存最多三十天。</li>
   <li><strong>Anthropic</strong> 在默认情况下不使用其商用 API 的输入与输出训练其模型,并声明在默认情况下于三十天内自其系统中删除。</li>
-  <li>在我们所使用的付费服务上,<strong>Google 的 Gemini API</strong> 不将请求与响应用于改进 Google 的产品;Google 仅为侦测其禁止用途政策的违反情形及履行法定义务,在有限期间内保存日志。</li>
+  <li><strong>Google 的 Gemini Developer API</strong>曾用于以前的语音对话请求。新的AI请求不再使用该服务。以前的请求仍受发送时适用的处理和保留条件约束。</li>
   <li><strong>Google Cloud Text-to-Speech</strong> 依据与上述各项相区别的 Google Cloud 条款运营,据该条款,客户数据不会用于训练 Google 的模型。</li>
 </ul>
 <p>以上是各提供方自身的承诺,依据我们据以持有账户的付费商业条款作出。它们并非我们能够代任何其他公司给出的保证;各提供方的现行条款始终优先适用。若此种安排发生变化,本条亦随之修改。</p>
